@@ -1,8 +1,14 @@
 body {
     width: 100vw;
     background: rgb(180, 156, 66);
+    position: relative;
+    height: 100vh;
 
 
+}
+
+main {
+    width: 100vw;
 }
 
 .card {
@@ -37,4 +43,14 @@ body {
 
 .table {
     color: white;
+}
+
+footer {
+    color: white;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
 }
