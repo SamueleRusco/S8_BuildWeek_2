@@ -1,10 +1,23 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    color:white;
+    margin:0;
 }
 p{
     color: white;
     font-size: 0.6em;
     margin-bottom: 2px;
+}
+
+h5{
+    font-weight: 600;
+}
+
+h6{
+    color: rgb(123,123,123);
+    font-weight: 600;
+    font-size: 0.9em;
 }
 
 .centerPart{
@@ -39,7 +52,7 @@ fa-houseé{
 
 .mycard{
     width: 100%;
-    height: 250px;
+    
     background: rgb(33,33,33);
     background: linear-gradient(16deg, rgba(33,33,33,1) 0%, rgba(55,55,55,1) 100%);
 }
@@ -61,4 +74,20 @@ fa-houseé{
 .pBold{
     font-weight: 600;
 
+}
+
+.imgCardPicoola{
+    width: 100px;
+}
+.mycardsmall{
+height: 60px;
+background-color: #444444;
+}
+
+.background{
+    background-size: cover;
+}
+
+.mycardpiace{
+    background-color: #232323;
 }
