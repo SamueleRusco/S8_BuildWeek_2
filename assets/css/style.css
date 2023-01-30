@@ -1,0 +1,64 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: white;
+    font-size: 0.6em;
+    margin-bottom: 2px;
+}
+
+.centerPart{
+    background: rgb(33,33,33);
+background: linear-gradient(190deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
+}
+.logo{
+    height: 50px;
+    
+}
+
+.icon{
+     height: 20px;
+}
+.titleLeft{
+  font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin: 0px;
+}
+.ContainerIcon{
+    display:flex;
+    align-items: center;
+    
+}
+
+fa-houseé{
+    height: 30px;
+}
+
+/* css card annuncio */
+
+.mycard{
+    width: 100%;
+    height: 250px;
+    background: rgb(33,33,33);
+    background: linear-gradient(16deg, rgba(33,33,33,1) 0%, rgba(55,55,55,1) 100%);
+}
+.mycard img {
+    width: 30%;}
+.mycard div h5{
+    font-weight: bolder;
+}
+
+.mycardText{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.pBold{
+    font-weight: 600;
+
+}
