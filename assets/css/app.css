@@ -46,8 +46,12 @@ h6 {
   height: 20px;
 }
 
+.lateralPart {
+  background-color: black;
+}
+
 .titleLeft {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: white;
   margin: 0px;
@@ -65,8 +69,8 @@ fa-houseé {
 /* css card annuncio */
 .mycard {
   width: 100%;
-  background: rgb(33, 33, 33);
-  background: linear-gradient(16deg, rgb(33, 33, 33) 0%, rgb(55, 55, 55) 100%);
+  background: rgb(30, 30, 30);
+  background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
 
 .mycard img {
@@ -106,4 +110,9 @@ fa-houseé {
 
 .mycardpiace {
   background-color: #232323;
+}
+
+.mycardAmico img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=app.css.map */

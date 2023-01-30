@@ -18,8 +18,10 @@
 </head>
 
 <body>
+
   <div class="d-flex">
-    <div class="leftPart px-2 col-2 bg-dark">
+
+    <div class="lateralPart px-2 col-3 ">
 
       <div>
         <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="">
@@ -76,29 +78,29 @@
     </div>
 
 
-    <div class="centerPart px-4 col-9">
+    <div class="centerPart px-4 col-7">
       <div>
         2 icone
       </div>
 
       <!-- prima card ANUNCIO -->
-      <div class="card mycard d-flex flex-row align-items-center ">
+      <div class="card mycard d-flex flex-row ">
        <div class="col-3 h-100"> 
         <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
         </div>
-        <div class="card-body col-3 mycardText text-white ">
-          <p class="card-text titleLeft">Album</p>
-          <h5 class="card-title pBold fs-1">Titolo</h5>
-          <p class="card-text">Album</p>
-          <p class="card-text">Album</p>
+        <div class=" col-3 mycardText text-white mb-4 ">
+          <p class="card-text titleLeft mt-2">Album</p>
+          <h5 class="card-title pBold fs-1 mt-4 mb-3">Titolo</h5>
+          <p class="card-text mb-3">Album</p>
+          <p class="card-text mb-3">Album</p>
           <div class="d-flex flex-row">
             <a href="#" class="btn fs-6 rounded-pill me-3 buttonSpotify px-4 py-2">Play</a>
             <a href="#" class="btn fs-6 btn-outline-light rounded-pill px-4 py-2">Salva</a>
           </div>
          
         </div>
-        
- <button class="mybutton btn text-uppercase rounded-pill buttonAnnunci position-absolute top-0 end-0"> nascondi annunci</button>
+       <button class="mybutton btn text-uppercase rounded-pill buttonAnnunci position-absolute top-0 end-0 me-4 mt-3"> nascondi annunci</button><!-- -->  
+
       </div>
 
 <!-- fine prima card-->
@@ -272,41 +274,38 @@
     </div>
     </div>
     
-    <div class="rightPart bg-dark col-1">
+    <div class="lateralPart col-2">
     
       <div class="d-flex ">
-        <h3> I tuoi amici </h3>
+        <h3 class="titleLeft mt-4"> I tuoi amici </h3>
       <div> <i class="fa-light fa-user"></i></div>
       <div> <i class="fa-solid fa-xmark"></i></div>
 
-      </div>
-
+      </div>  
       <div>
-        <div class="card" >
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap" >
+          <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
+          <div class="card-body p-0">
+            <p class="titleLeft">Nome dell'amico
               content.</p>
+              <p class="titleLeft"> Ha ascoltato questa
+            
+              </p>
+              <p class="titleLeft"> al''ora</p>
           </div>
         </div>
       </div>
 
-      <div>
-        <div class="card" >
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      <div class="mt-4">
+        <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap" >
+          <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
+          <div class="card-body p-0">
+            <p class="titleLeft">Nome dell'amico
               content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+              <p class="titleLeft"> Ha ascoltato questa
+            
+              </p>
+              <p class="titleLeft"> al''ora</p>
           </div>
         </div>
       </div>
@@ -314,6 +313,7 @@
     </div>
   
 </div>
+
   <div class="footer">
     <div>
       <div>

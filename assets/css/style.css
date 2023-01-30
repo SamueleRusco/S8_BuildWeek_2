@@ -52,14 +52,13 @@ fa-houseé{
 
 .mycard{
     width: 100%;
-    
-    background: rgb(33,33,33);
-    background: linear-gradient(16deg, rgba(33,33,33,1) 0%, rgba(55,55,55,1) 100%);
+    background: rgb(255,0,211);
+background: linear-gradient(225deg, rgba(255,0,211,1) 0%, rgba(173,52,52,1) 100%);
 }
 .mycard img {
     width: 30%;}
 .mycard div h5{
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .mycardText{
@@ -74,7 +73,7 @@ fa-houseé{
 
 }
 .pBold{
-    font-weight: 600;
+    font-weight: 400;
 
 }
 

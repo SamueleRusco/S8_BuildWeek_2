@@ -12,6 +12,7 @@ p{
     margin-bottom: 2px;
 }
 
+
 h5{
     font-weight: 600;
 }
@@ -34,8 +35,11 @@ background: linear-gradient(190deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
 .icon{
      height: 20px;
 }
+.lateralPart{
+    background-color: black;
+}
 .titleLeft{
-  font-size: 1rem;
+  font-size: 0.7rem;
     font-weight: 600;
     color: white;
     margin: 0px;
@@ -54,9 +58,8 @@ fa-houseé{
 
 .mycard{
     width: 100%;
-    
-    background: rgb(33,33,33);
-    background: linear-gradient(16deg, rgba(33,33,33,1) 0%, rgba(55,55,55,1) 100%);
+    background: rgb(30,30,30);
+    background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
 .mycard img {
     width: 30%;}
@@ -92,4 +95,13 @@ background-color: #444444;
 
 .mycardpiace{
     background-color: #232323;
+}
+
+
+.mycardAmico{
+     
+    img{
+        width: 20px;
+        height:  20px;;
+    }
 }
