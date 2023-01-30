@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.buttonSpotify {
+  background-color: rgb(30, 215, 96);
+  border: none;
+}
+
+.buttonAnnunci {
+  background-color: rgb(34, 34, 34);
+  font-size: 1vw;
+  color: rgb(80, 80, 80);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: white;
+  font-size: 0.6em;
+  margin-bottom: 2px;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h6 {
+  color: rgb(123, 123, 123);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.centerPart {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(190deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
+}
+
+.logo {
+  height: 50px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.titleLeft {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+}
+
+.ContainerIcon {
+  display: flex;
+  align-items: center;
+}
+
+fa-houseé {
+  height: 30px;
+}
+
+/* css card annuncio */
+.mycard {
+  width: 100%;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(16deg, rgb(33, 33, 33) 0%, rgb(55, 55, 55) 100%);
+}
+
+.mycard img {
+  width: 30%;
+}
+
+.mycard div h5 {
+  font-weight: bolder;
+}
+
+.mycardText {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.pBold {
+  font-weight: 600;
+}
+
+.imgCardPicoola {
+  width: 100px;
+}
+
+.mycardsmall {
+  height: 60px;
+  background-color: #444444;
+}
+
+.background {
+  background-size: cover;
+}
+
+.mycardpiace {
+  background-color: #232323;
+}/*# sourceMappingURL=app.css.map */
