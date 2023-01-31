@@ -50,11 +50,6 @@ h6 {
 .lateralPart {
   background-color: black;
 }
-@media screen and (max-width: 500px) {
-  .lateralPart {
-    display: none;
-  }
-}
 
 .titleLeft {
   font-size: 0.7rem;

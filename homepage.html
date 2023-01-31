@@ -22,7 +22,7 @@
 
   <div class="d-flex">
 
-    <div class="lateralPart px-3 col-lg-3 .d-sm-none">
+    <div class="lateralPart px-3 d-none d-md-block col-md-3 ">
 
       <div>
         <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="">
@@ -79,15 +79,15 @@
     </div>
 
 
-    <div class="centerPart px-4 col-lg-7 col-sm-12 ">
-      <div id="iconarrows" class="d-flex my-2  ">
+    <div class="centerPart px-4 col-md-7 col-12">
+      <div class="d-flex my-2 d-none d-md-block ">
         <i class="fa-solid fa-arrow-right mx-2"></i>
         <i class="fa-solid fa-arrow-left"></i>
       </div>
 
       <!-- prima card ANUNCIO -->
-      <div class="card mycard d-flex flex-row align-items-center ">
-       <div class="col-3 h-100"> 
+      <div class=" d-none d-md-block card mycard d-md-flex flex-md-row align-items-md-center ">
+       <div class="col-4 col-md-3 h-100"> 
         <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
         </div>
         <div class=" col-3 mycardText text-white mb-4 ">
@@ -108,30 +108,30 @@
 <!-- fine prima card-->
       <div class="my-3 d-flex justify-content-between">
         <h5> Buonasera</h5>
-        <div class="d-sm-block d-md-none"> 
-          <i class="fa-solid fa-bell text-white"></i>
-          <i class="fa-solid fa-clock text-white"></i>
-          <i class="fa-solid fa-gears"></i>
+        <div class="d-sm-block d-md-none "> 
+          <i class="fa-solid fa-bell text-white mx-2"></i>
+          <i class="fa-solid fa-clock text-white mx-2"></i>
+          <i class="fa-solid fa-gears mx-2"></i>
         </div>
       </div>
       <div class="d-sm-block d-md-none d-flex p-4"> 
         <h6 class="text-white me-4">Musica</h6>
-        <h6 class="text-white">MPodcast e show</h6>
+        <h6 class="text-white">Podcast e show</h6>
       </div>
 
       <div class="contenitoreCardPiccole">
         <!--  card PICCOLA -->
-        <div class="row row-cols-3 gx-3 d-flex justify-content-evenly">
+        <div class="row row-cols-2 row-cols-md-3 gx-3 d-flex justify-content-evenly">
           <div class="col">
             <div class="card mycardsmall mb-3">
               <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
+                <div class=" col-4 h-100 ">
                   <img src=" http://placekitten.com/900/900"
                     class="img-fluid rounded-start imgcardsmall h-100" alt="...">
                 </div>
-                <div class="col-md-8 ">
+                <div class=" col-8  ">
                   <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0">Card title</h5>
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
                   </div>
                 </div>
               </div>
@@ -141,13 +141,61 @@
           <div class="col">
             <div class="card mycardsmall mb-3">
               <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
-                  <img src="./assets/img/Spotify-Black-Logo.wine (1).svg"
+                <div class=" col-4 h-100 ">
+                  <img src=" http://placekitten.com/900/900"
                     class="img-fluid rounded-start imgcardsmall h-100" alt="...">
                 </div>
-                <div class="col-md-8 ">
+                <div class=" col-8  ">
                   <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0">Card title</h5>
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mycardsmall mb-3">
+              <div class="row g-0 h-100 d-flex align-items-center">
+                <div class=" col-4 h-100 ">
+                  <img src=" http://placekitten.com/900/900"
+                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
+                </div>
+                <div class=" col-8  ">
+                  <div class="card-body justify-content-center">
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mycardsmall mb-3">
+              <div class="row g-0 h-100 d-flex align-items-center">
+                <div class=" col-4 h-100 ">
+                  <img src=" http://placekitten.com/900/900"
+                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
+                </div>
+                <div class=" col-8  ">
+                  <div class="card-body justify-content-center">
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mycardsmall mb-3">
+              <div class="row g-0 h-100 d-flex align-items-center">
+                <div class=" col-4 h-100 ">
+                  <img src=" http://placekitten.com/900/900"
+                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
+                </div>
+                <div class=" col-8  ">
+                  <div class="card-body justify-content-center">
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
                   </div>
                 </div>
               </div>
@@ -156,58 +204,13 @@
           <div class="col">
             <div class="card mycardsmall mb-3">
               <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
-                  <img src="./assets/img/Spotify-Black-Logo.wine (1).svg"
+                <div class=" col-4 h-100 ">
+                  <img src=" http://placekitten.com/900/900"
                     class="img-fluid rounded-start imgcardsmall h-100" alt="...">
                 </div>
-                <div class="col-md-8 ">
+                <div class=" col-8  ">
                   <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
-                  <img src="./assets/img/Spotify-Black-Logo.wine (1).svg"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class="col-md-8 ">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
-                  <img src="./assets/img/Spotify-Black-Logo.wine (1).svg"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class="col-md-8 ">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0 ">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class="col-md-4 h-100 ">
-                  <img src="./assets/img/Spotify-Black-Logo.wine (1).svg"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class="col-md-8 ">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 mb-0">Card title</h5>
+                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
                   </div>
                 </div>
               </div>
@@ -218,7 +221,7 @@
         </div>
 
 
-        <div>
+        <div class="d-none d-md-block">
           <div> <h3> Altro di ciò che ti piace</h3> </div>
          <div> <h6>Visualizzato tutto</h6> </div>
   <div class="row row-cols-5 gx-3 d-flex justify-content-evenly">       
@@ -282,10 +285,76 @@
 
 
       </div>
+
+      <div> 
+        
+      </div>
     </div>
-    </div>
+
+ <!-- card solo mobile-->
+    <div class=" card mycard d-block d-md-none my-3 ">
+      <div class=" d-flex flex-row"> 
+      <div class="col-6 col-md-3 h-100"> 
+       <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
+       </div>
+       <div class=" col-6 mycardText mt-2  ">
+         <h6 class="card-text  mt-2">Playlist</h6>
+      
+         <p class="card-text fs-5 mb-3 ">Nome della playlist</p>
+       </div>  
+        
+         </div>
+
+         <div class="d-flex justify-content-between align-items-b mx-3 my-2">
+        <div class="d-flex"> 
+          <i class="fa-solid fa-heart text-white me-4 "></i>
+          <i class="fa-solid fa-bookmark text-white me-2 "></i> 
+        </div>
+        <div class="d-flex"> 
+          <h6 class="">16 brani</h6>
+          <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
+        </div>
+       </div>
+       </div>
+ <!-- fine card solo mobile-->     
+ 
+ <!-- card solo mobile-->
+ <div class=" card mycard d-block d-md-none my-3 ">
+  <div class=" d-flex flex-row"> 
+  <div class="col-6 col-md-3 h-100"> 
+   <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
+   </div>
+   <div class=" col-6 mycardText mt-2  ">
+     <h6 class="card-text  mt-2">Playlist</h6>
+  
+     <p class="card-text fs-5 mb-3 ">Nome della playlist</p>
+   </div>  
     
-    <div class="lateralPart px-3 .d-sm-none col-lg-2">
+     </div>
+
+     <div class="d-flex justify-content-between align-items-b mx-3 my-2">
+    <div class="d-flex"> 
+      <i class="fa-solid fa-heart text-white me-4 "></i>
+      <i class="fa-solid fa-bookmark text-white me-2 "></i> 
+    </div>
+    <div class="d-flex"> 
+      <h6 class="">16 brani</h6>
+      <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
+    </div>
+   </div>
+   </div>
+<!-- fine card solo mobile-->   
+ 
+ 
+
+   
+
+
+    </div>
+
+   
+    
+    <div class="lateralPart px-3 d-none d-md-block col-md-2 ">
     
       <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
         <h3 class="titleLeft "> I tuoi amici </h3>
@@ -324,6 +393,8 @@
       </div>
 
     </div>
+
+
   
 </div>
 
