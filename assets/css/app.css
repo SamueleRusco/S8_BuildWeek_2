@@ -42,12 +42,18 @@ h6 {
   height: 50px;
 }
 
-.icon {
+.fa-books {
   height: 20px;
+  width: 20px;
 }
 
 .lateralPart {
   background-color: black;
+}
+@media screen and (max-width: 500px) {
+  .lateralPart {
+    display: none;
+  }
 }
 
 .titleLeft {
@@ -62,17 +68,22 @@ h6 {
   align-items: center;
 }
 
-fa-houseé {
+.fa-houseé {
   height: 30px;
 }
 
 /* css card annuncio */
 .mycard {
   width: 100%;
-  background: rgb(30, 30, 30);
+  background: rgb(38, 38, 38);
   background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
 
+@media screen and (max-width: 500px) {
+  #cardprova {
+    display: none;
+  }
+}
 .mycard img {
   width: 30%;
 }
@@ -115,4 +126,10 @@ fa-houseé {
 .mycardAmico img {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .centerPart {
+    width: 100%;
+  }
 }/*# sourceMappingURL=app.css.map */
