@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 <body>
-    <main class="row">
-        <section class="col-2 navbar bg-dark">
+    <main class="row g-0">
+        <section class="col-3 navbar bg-dark">
             <p class="text-white">cose cose</p>
         </section>
 
 
-        <section class="col-9 mainbar bg-dark-subtle p-0">
+        <section class="col-7 mainbar  p-0">
 
             <div class="header">
 
@@ -25,7 +25,7 @@
 
                     <div class="row g-0">
                         <div class="col">
-                            <img src="https://place.dog/300/200" class="img-fluid m-5 " alt="immagine canzone">
+                            <img src="https://place.dog/300/200" class=" " alt="immagine canzone">
                         </div>
 
                         <div class="col-md-10 d-flex align-items-end justify-content-start p-0">
@@ -90,54 +90,88 @@
         </section>
 
 
-        <section class="col navbar2 bg-primary">
+        <section class="col-2 navbar2 bg-primary">
 
         </section>
 
 
 
-        <footer class="row ">
-
-            <div class="col-2 ">
+        <footer>
 
 
-                <div class=" mb-3 ">
+            <div class="music-player row">
 
-                    <div class="row g-0 ">
 
-                        <div class="col-2 d-flex justify-content-start align-items-center">
-                            <img src="https://place.dog/50/50" class="img-fluid" alt="...">
+                <div class="song-bar col-3">
+                    <div class="song-infos">
+                        <div class="image">
+                            <img src="https://place.dog/300/300" alt="" />
                         </div>
-
-
-                        <div class="col-8 d-flex">
-                            <div class="card-body">
-                                <h5 class="card-title">War Pigs</h5>
-                                <p class="card-text">Black Sabbath</p>
-
-                            </div>
+                        <div class="song-description">
+                            <p class="title">
+                                Titolo Canzone
+                            </p>
+                            <p class="artist">Artista</p>
                         </div>
+                    </div>
 
-                        <div class="col-2 d-flex">
-                            <div class="card-body">
-                                <p><i class="fa-regular fa-heart"></i></p>
-                            </div>
-
-                        </div>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-compress"></i>
                     </div>
                 </div>
 
 
+                <div class="col-7 progress-controller">
+                    <div class="control-buttons">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="play-pause fas fa-play"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+
+                    <div class="progress-container">
+                        <span>tempo inizio</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span>tempo fine</span>
+                    </div>
+                </div>
 
 
-
+                <div class="col-2 other-features">
+                    <i class="fas fa-list-ul"></i>
+                    <i class="fas fa-desktop"></i>
+                    <div class="volume-bar">
+                        <i class="fas fa-volume-down"></i>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
-            <div class="col-9 centre text-center">aaa</div>
-
-            <div class="col-1 right">baab</div>
         </footer>
+        <div class="footerMobile g-0 d-flex  flex-column justify-content-center">
+            <div class=" player d-flex justify-content-end">
+                <p>testo Che gira</p>
+                <i class="fa-solid fa-display m-2"></i>
+                <i class="fa-regular fa-heart m-2"></i>
+                <i class="fa-solid fa-play m-2"></i>
+
+            </div>
+            <div class="footerBar ">
+                <div><i class="fa-solid fa-house"></i>
+                    <p>home</p>
+                </div>
+            </div>
+
+
+            <div></div>
+
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
