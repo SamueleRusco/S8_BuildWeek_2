@@ -48,9 +48,7 @@ background: linear-gradient(190deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
 
 .lateralPart{
     background-color: black;
-    @media screen and (max-width: 500px) {
-        display: none;
-    }
+  
 }
 .titleLeft{
   font-size: 0.7rem;
@@ -126,8 +124,5 @@ background-color: #444444;
     }
 }
 
-@media screen and (min-width: 576px)  {
-    
-    
-}
+
 
