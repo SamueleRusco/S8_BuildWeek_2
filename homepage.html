@@ -22,7 +22,7 @@
 
   <div class="d-flex">
 
-    <div class="lateralPart px-3 col-3 ">
+    <div class="lateralPart px-3 col-lg-3 .d-sm-none">
 
       <div>
         <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="">
@@ -79,14 +79,14 @@
     </div>
 
 
-    <div class="centerPart px-4 col-7 col-sm-12">
+    <div class="centerPart px-4 col-lg-7 col-sm-12 ">
       <div id="iconarrows" class="d-flex my-2  ">
         <i class="fa-solid fa-arrow-right mx-2"></i>
         <i class="fa-solid fa-arrow-left"></i>
       </div>
 
       <!-- prima card ANUNCIO -->
-      <div id="cardprova" class="card mycard d-flex flex-row ">
+      <div class="card mycard d-flex flex-row align-items-center ">
        <div class="col-3 h-100"> 
         <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
         </div>
@@ -106,8 +106,17 @@
       </div>
 
 <!-- fine prima card-->
-      <div class="my-3">
-        <h3> Buonasera</h3>
+      <div class="my-3 d-flex justify-content-between">
+        <h5> Buonasera</h5>
+        <div class="d-sm-block d-md-none"> 
+          <i class="fa-solid fa-bell text-white"></i>
+          <i class="fa-solid fa-clock text-white"></i>
+          <i class="fa-solid fa-gears"></i>
+        </div>
+      </div>
+      <div class="d-sm-block d-md-none d-flex p-4"> 
+        <h6 class="text-white me-4">Musica</h6>
+        <h6 class="text-white">MPodcast e show</h6>
       </div>
 
       <div class="contenitoreCardPiccole">
@@ -276,7 +285,7 @@
     </div>
     </div>
     
-    <div class="lateralPart px-3 col-2">
+    <div class="lateralPart px-3 .d-sm-none col-lg-2">
     
       <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
         <h3 class="titleLeft "> I tuoi amici </h3>

@@ -75,11 +75,11 @@ background: linear-gradient(190deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
     background: rgb(38,38,38);
     background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
-
+/*
     @media screen and (max-width: 500px) {
        #cardprova{
         display:none;
-       } }
+       } } */
        
 .mycard img {
     width: 30%;}
@@ -126,8 +126,8 @@ background-color: #444444;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .centerPart{ width: 100%;}
+@media screen and (min-width: 576px)  {
+    
     
 }
 

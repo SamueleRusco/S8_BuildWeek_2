@@ -1,22 +1,9 @@
-@charset "UTF-8";
-.buttonSpotify {
-  background-color: rgb(30, 215, 96);
-  border: none;
-}
-
-.buttonAnnunci {
-  background-color: rgb(34, 34, 34);
-  font-size: 1vw;
-  color: rgb(80, 80, 80);
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   color: white;
   margin: 0;
 }
-
 p {
   color: white;
   font-size: 0.6em;
@@ -35,9 +22,12 @@ h6 {
 
 .centerPart {
   background: rgb(33, 33, 33);
-  background: linear-gradient(190deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
+  background: linear-gradient(
+    190deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
 }
-
 .logo {
   height: 50px;
 }
@@ -49,20 +39,16 @@ h6 {
 
 .lateralPart {
   background-color: black;
-}
-@media screen and (max-width: 500px) {
-  .lateralPart {
+  @media screen and (max-width: 500px) {
     display: none;
   }
 }
-
 .titleLeft {
   font-size: 0.7rem;
   font-weight: 600;
   color: white;
   margin: 0px;
 }
-
 .ContainerIcon {
   display: flex;
   align-items: center;
@@ -73,26 +59,29 @@ h6 {
 }
 
 /* css card annuncio */
-.mycard {
+
+.miaCarta {
   width: 100%;
+  display: flex;
+  flex-direction: row;
   background: rgb(38, 38, 38);
   background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
 
-/*
-    @media screen and (max-width: 500px) {
-       #cardprova{
-        display:none;
-       } } */
-.mycard img {
-  width: 30%;
+@media screen and (max-width: 500px) {
+  #cardprova {
+    display: none !important;
+  }
 }
 
-.mycard div h5 {
+.miaCarta img {
+  width: 30%;
+}
+.miaCarta div h5 {
   font-weight: bolder;
 }
 
-.mycardText {
+.miaCartaText {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
@@ -101,7 +90,6 @@ h6 {
   flex-wrap: wrap;
   height: 100%;
 }
-
 .pBold {
   font-weight: 600;
 }
@@ -109,7 +97,6 @@ h6 {
 .imgCardPicoola {
   width: 100px;
 }
-
 .mycardsmall {
   height: 60px;
   background-color: #444444;
@@ -123,7 +110,15 @@ h6 {
   background-color: #232323;
 }
 
-.mycardAmico img {
-  width: 20px;
-  height: 20px;
-}/*# sourceMappingURL=app.css.map */
+.mycardAmico {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .centerPart {
+    width: 100%;
+  }
+}
