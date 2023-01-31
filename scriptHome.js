@@ -58,9 +58,9 @@ const asyncWait = async function (url, where) {
       } else if (where === "first") {
         div.innerHTML += `
       
-            <div class="col-4 col-md-3 h-100 d">
+            <div class="">
             <img
-              class="background h-100 w-100 p-3"
+              style="width: 200px"
               src="${jarray[0].album.cover_xl}"
               class="card-img-top"
               alt="..."
