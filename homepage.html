@@ -1,410 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  
-  <link rel="stylesheet" href="./assets/css/app.css">
-  <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <title>Document</title>
+  </head>
 
-<body>
+  <body>
+    <div class="d-flex">
+      <div class="lateralPart px-3 d-none d-md-block col-md-3">
+        <div>
+          <img
+            class="logo"
+            src="./assets/img/Spotify_Logo_RGB_White.png"
+            alt=""
+          />
+        </div>
 
-  <div class="d-flex">
+        <div class="d-flex flex-column text-white">
+          <div class="ContainerIcon mt-3 my-2">
+            <i class="fa-solid fa-house text-white me-2"></i>
+            <h3 class="titleLeft">Home</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
+            <h3 class="titleLeft">Cerca</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-book-open me-2"></i>
+            <h3 class="titleLeft">La tua libreria</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-square-plus text-white me-2"></i>
+            <h3 class="titleLeft">Crea la tua playlist</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-heart text-white me-2"></i>
+            <h3 class="titleLeft me-1">Brani che ti piacicono</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-bookmark text-white me-2"></i>
+            <h3 class="titleLeft">I tuoi episodi</h3>
+          </div>
+        </div>
 
-    <div class="lateralPart px-3 d-none d-md-block col-md-3 ">
+        <hr />
 
-      <div>
-        <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="">
+        <div class="playlist">
+          <p>nome playlist</p>
+          <p>nome playlist</p>
+          <p>nome playlist</p>
+          <p>nome playlist</p>
+          <p>nome playlist</p>
+        </div>
       </div>
 
-      <div class="d-flex flex-column text-white ">
-
-        <div class="ContainerIcon mt-3 my-2">
-          <i class="fa-solid fa-house text-white me-2"></i> 
-        <h3 class="titleLeft"> Home</h3>
-        </div>
-        <div class="ContainerIcon my-2">
-          <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
-          <h3 class="titleLeft"> Cerca</h3>
-        </div>
-        <div class="ContainerIcon my-2">
-          <i class="fa-solid fa-book-open me-2"></i>
-          <h3 class="titleLeft"> La tua libreria</h3>
-        </div>
-        <div class="ContainerIcon my-2">
-          <i class="fa-solid fa-square-plus text-white me-2 "></i>
-          <h3 class="titleLeft">Crea la tua playlist </h3>
-        </div>
-        <div class="ContainerIcon my-2">
-          <i class="fa-solid fa-heart text-white me-2"></i>
-          <h3 class="titleLeft me-1">Brani che ti piacicono </h3>
-        </div>
-        <div class="ContainerIcon my-2">
-          <i class="fa-solid fa-bookmark text-white me-2"></i> 
-          <h3 class="titleLeft">I tuoi episodi </h3>
+      <div class="centerPart px-4 col-md-7 col-12">
+        <div class="d-flex my-2 d-none d-md-block">
+          <i class="fa-solid fa-arrow-left"></i
+          ><i class="fa-solid fa-arrow-right mx-2"></i>
         </div>
 
-
-
-
-      </div>
-
-
-
-      <hr>
-
-      <div class=" playlist">
-        <p> nome playlist
-        </p>
-        <p> nome playlist
-        </p>
-        <p> nome playlist
-        </p>
-        <p> nome playlist
-        </p>
-        <p> nome playlist
-        </p>
-      </div>
-    </div>
-
-
-    <div class="centerPart px-4 col-md-7 col-12">
-      <div class="d-flex my-2 d-none d-md-block ">
-        <i class="fa-solid fa-arrow-right mx-2"></i>
-        <i class="fa-solid fa-arrow-left"></i>
-      </div>
-
-      <!-- prima card ANUNCIO -->
-      <div class=" d-none d-md-block card mycard d-md-flex flex-md-row align-items-md-center ">
-       <div class="col-4 col-md-3 h-100"> 
-        <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
+        <!-- prima card ANUNCIO -->
+        <div
+          class="d-none d-md-block card mycard d-md-flex flex-md-row align-items-md-center"
+        >
+          <div class="col-4 col-md-3 h-100">
+            <img
+              class="background h-100 w-100 p-3"
+              src="http://placekitten.com/900/900"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="col-3 mycardText text-white mb-4">
+            <p class="card-text titleLeft mt-2">Album</p>
+            <h6 class="card-title pBold fs-1 mt-4 mb-3">Titolo</h6>
+            <p class="card-text mb-3">Album</p>
+            <p class="card-text mb-3">Album</p>
+            <div class="d-flex flex-row">
+              <a
+                href="#"
+                class="btn fs-6 rounded-pill me-3 buttonSpotify px-4 py-2"
+                >Play</a
+              >
+              <a
+                href="#"
+                class="btn fs-6 btn-outline-light rounded-pill px-4 py-2"
+                >Salva</a
+              >
+            </div>
+          </div>
+          <button
+            class="mybutton btn text-uppercase rounded-pill buttonAnnunci position-absolute top-0 end-0 me-4 mt-3"
+          >
+            nascondi annunci</button
+          ><!-- -->
         </div>
-        <div class=" col-3 mycardText text-white mb-4 ">
-          <p class="card-text titleLeft mt-2">Album</p>
-          <h6 class="card-title pBold fs-1 mt-4 mb-3">Titolo</h6>
-          <p class="card-text mb-3">Album</p>
-          <p class="card-text mb-3">Album</p>
+
+        <!-- fine prima card-->
+        <div class="my-3 d-flex justify-content-between">
+          <h6>Buonasera</h6>
+          <div class="d-sm-block d-md-none">
+            <i class="fa-solid fa-bell text-white mx-2"></i>
+            <i class="fa-solid fa-clock text-white mx-2"></i>
+            <i class="fa-solid fa-gears mx-2"></i>
+          </div>
+        </div>
+        <div class="d-sm-block d-md-none d-flex p-4">
+          <h6 class="text-white me-4">Musica</h6>
+          <h6 class="text-white">Podcast e show</h6>
+        </div>
+
+        <div class="contenitoreCardPiccole">
+          <!--  card PICCOLA -->
+          <div
+            class="row row-cols-2 row-cols-md-3 gx-3 d-flex justify-content-evenly"
+          >
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mycardsmall mb-3">
+                <div class="row g-0 h-100 d-flex align-items-center">
+                  <div class="col-4 h-100">
+                    <img
+                      src=" http://placekitten.com/900/900"
+                      class="img-fluid rounded-start imgcardsmall h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body justify-content-center">
+                      <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ultime card piccoline -->
+          <div class="d-none d-md-block">
+            <div><h3>Altro di ciò che ti piace</h3></div>
+            <div><h6>Visualizzato tutto</h6></div>
+            <div class="row row-cols-5 gx-3 d-flex justify-content-evenly">
+              <div class="col">
+                <div class="card mycardpiace">
+                  <img
+                    src="http://placekitten.com/900/900"
+                    class="card-img-top p-2 rounded-4"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title fw-semibold">Card title</h6>
+                    <p class="card-text">Some quick example</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card mycardpiace">
+                  <img
+                    src="http://placekitten.com/900/900"
+                    class="card-img-top p-2 rounded-4"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Card title</h6>
+                    <p class="card-text">Some quick example</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card mycardpiace">
+                  <img
+                    src="http://placekitten.com/900/900"
+                    class="card-img-top p-2 rounded-4"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Card title</h6>
+                    <p class="card-text">Some quick example</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card mycardpiace">
+                  <img
+                    src="http://placekitten.com/900/900"
+                    class="card-img-top p-2 rounded-4"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Card title</h6>
+                    <p class="card-text">Some quick example</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card mycardpiace">
+                  <img
+                    src="http://placekitten.com/900/900"
+                    class="card-img-top p-2 rounded-4"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Card title</h6>
+                    <p class="card-text">Some quick example</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+
+        <!-- card solo mobile-->
+        <div class="card mycard d-block d-md-none my-3">
           <div class="d-flex flex-row">
-            <a href="#" class="btn fs-6 rounded-pill me-3 buttonSpotify px-4 py-2">Play</a>
-            <a href="#" class="btn fs-6 btn-outline-light rounded-pill px-4 py-2">Salva</a>
-          </div>
-         
-        </div>
-       <button class="mybutton btn text-uppercase rounded-pill buttonAnnunci position-absolute top-0 end-0 me-4 mt-3"> nascondi annunci</button><!-- -->  
+            <div class="col-6 col-md-3 h-100">
+              <img
+                class="background h-100 w-100 p-3"
+                src="http://placekitten.com/900/900"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-6 mycardText mt-2">
+              <h6 class="card-text mt-2">Playlist</h6>
 
-      </div>
-
-<!-- fine prima card-->
-      <div class="my-3 d-flex justify-content-between">
-        <h6> Buonasera</h6>
-        <div class="d-sm-block d-md-none "> 
-          <i class="fa-solid fa-bell text-white mx-2"></i>
-          <i class="fa-solid fa-clock text-white mx-2"></i>
-          <i class="fa-solid fa-gears mx-2"></i>
-        </div>
-      </div>
-      <div class="d-sm-block d-md-none d-flex p-4"> 
-        <h6 class="text-white me-4">Musica</h6>
-        <h6 class="text-white">Podcast e show</h6>
-      </div>
-
-      <div class="contenitoreCardPiccole">
-        <!--  card PICCOLA -->
-        <div class="row row-cols-2 row-cols-md-3 gx-3 d-flex justify-content-evenly">
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
-                  </div>
-                </div>
-              </div>
+              <p class="card-text fs-5 mb-3">Nome della playlist</p>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
-                  </div>
-                </div>
-              </div>
+          <div class="d-flex justify-content-between align-items-b mx-3 my-2">
+            <div class="d-flex">
+              <i class="fa-solid fa-heart text-white me-4"></i>
+              <i class="fa-solid fa-bookmark text-white me-2"></i>
+            </div>
+            <div class="d-flex">
+              <h6 class="">16 brani</h6>
+              <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
+            </div>
+          </div>
+        </div>
+        <!-- fine card solo mobile-->
+
+        <!-- card solo mobile-->
+        <div class="card mycard d-block d-md-none my-3">
+          <div class="d-flex flex-row">
+            <div class="col-6 col-md-3 h-100">
+              <img
+                class="background h-100 w-100 p-3"
+                src="http://placekitten.com/900/900"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-6 mycardText mt-2">
+              <h6 class="card-text mt-2">Playlist</h6>
+
+              <p class="card-text fs-5 mb-3">Nome della playlist</p>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
-                  </div>
-                </div>
-              </div>
+          <div class="d-flex justify-content-between align-items-b mx-3 my-2">
+            <div class="d-flex">
+              <i class="fa-solid fa-heart text-white me-4"></i>
+              <i class="fa-solid fa-bookmark text-white me-2"></i>
+            </div>
+            <div class="d-flex">
+              <h6 class="">16 brani</h6>
+              <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
             </div>
           </div>
+        </div>
+        <!-- fine card solo mobile-->
+      </div>
 
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h6 class="card-title fs-6 fs-md-3 mb-0">Card title</h6>
-                  </div>
-                </div>
-              </div>
+      <div class="lateralPart px-3 d-none d-md-block col-md-2">
+        <div
+          class="d-flex justify-content-between mt-4 align-items-center mb-2"
+        >
+          <h3 class="titleLeft">I tuoi amici</h3>
+
+          <div mt-4>
+            <i class="fa-solid fa-user-plus text-white"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div>
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="./assets/img/amici/image09.jpeg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="titleLeft">Nome dell'amico content.</p>
+              <p class="titleLeft">Ha ascoltato questa</p>
+              <p class="titleLeft">al''ora</p>
             </div>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
-                  </div>
-                </div>
-              </div>
+        <div class="mt-4">
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="./assets/img/amici/image09.jpeg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="titleLeft">Nome dell'amico content.</p>
+              <p class="titleLeft">Ha ascoltato questa</p>
+              <p class="titleLeft">al''ora</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card mycardsmall mb-3">
-              <div class="row g-0 h-100 d-flex align-items-center">
-                <div class=" col-4 h-100 ">
-                  <img src=" http://placekitten.com/900/900"
-                    class="img-fluid rounded-start imgcardsmall h-100" alt="...">
-                </div>
-                <div class=" col-8  ">
-                  <div class="card-body justify-content-center">
-                    <h5 class="card-title fs-6 fs-md-3 mb-0">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-
         </div>
-
-<!-- ultime card piccoline -->
-        <div class="d-none d-md-block">
-          <div> <h3> Altro di ciò che ti piace</h3> </div>
-         <div> <h6>Visualizzato tutto</h6> </div>
-  <div class="row row-cols-5 gx-3 d-flex justify-content-evenly">       
-      <div class="col"> 
-          <div class="card mycardpiace">
-            <img src="http://placekitten.com/900/900" class="card-img-top p-2 rounded-4" alt="...">
-            <div class="card-body">
-              <h6 class="card-title fw-semibold">Card title</h6>
-              <p class="card-text">Some quick example </p>
-              
-            </div>
-          </div>
-      </div>
-
-      <div class="col "> 
-        <div class="card mycardpiace">
-          <img src="http://placekitten.com/900/900" class="card-img-top p-2 rounded-4" alt="...">
-          <div class="card-body">
-            <h6 class="card-title">Card title</h6>
-            <p class="card-text">Some quick example </p>
-           
-          </div>
-        </div>
-    </div>
-
-    <div class="col"> 
-      <div class="card mycardpiace">
-        <img src="http://placekitten.com/900/900" class="card-img-top p-2 rounded-4" alt="...">
-        <div class="card-body">
-          <h6 class="card-title">Card title</h6>
-          <p class="card-text">Some quick example </p>
-          
-        </div>
-      </div>
-  </div>
-
-  <div class="col"> 
-    <div class="card mycardpiace">
-      <img src="http://placekitten.com/900/900" class="card-img-top p-2 rounded-4" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
-        <p class="card-text">Some quick example </p>
-        
-      </div>
-    </div>
-</div>
-
-  <div class="col"> 
-    <div class="card mycardpiace">
-      <img src="http://placekitten.com/900/900" class="card-img-top p-2 rounded-4" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
-        <p class="card-text">Some quick example </p>
-       
-      </div>
-    </div>
-</div>
-
-
-        </div>
-
-
-      </div>
-
-      <div> 
-        
       </div>
     </div>
 
- <!-- card solo mobile-->
-    <div class=" card mycard d-block d-md-none my-3 ">
-      <div class=" d-flex flex-row"> 
-      <div class="col-6 col-md-3 h-100"> 
-       <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
-       </div>
-       <div class=" col-6 mycardText mt-2  ">
-         <h6 class="card-text  mt-2">Playlist</h6>
-      
-         <p class="card-text fs-5 mb-3 ">Nome della playlist</p>
-       </div>  
-        
-         </div>
-
-         <div class="d-flex justify-content-between align-items-b mx-3 my-2">
-        <div class="d-flex"> 
-          <i class="fa-solid fa-heart text-white me-4 "></i>
-          <i class="fa-solid fa-bookmark text-white me-2 "></i> 
-        </div>
-        <div class="d-flex"> 
-          <h6 class="">16 brani</h6>
-          <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
-        </div>
-       </div>
-       </div>
- <!-- fine card solo mobile-->     
- 
- <!-- card solo mobile-->
- <div class=" card mycard d-block d-md-none my-3 ">
-  <div class=" d-flex flex-row"> 
-  <div class="col-6 col-md-3 h-100"> 
-   <img class="background h-100 w-100 p-3" src="http://placekitten.com/900/900" class="card-img-top" alt="..."> 
-   </div>
-   <div class=" col-6 mycardText mt-2  ">
-     <h6 class="card-text  mt-2">Playlist</h6>
-  
-     <p class="card-text fs-5 mb-3 ">Nome della playlist</p>
-   </div>  
-    
-     </div>
-
-     <div class="d-flex justify-content-between align-items-b mx-3 my-2">
-    <div class="d-flex"> 
-      <i class="fa-solid fa-heart text-white me-4 "></i>
-      <i class="fa-solid fa-bookmark text-white me-2 "></i> 
-    </div>
-    <div class="d-flex"> 
-      <h6 class="">16 brani</h6>
-      <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
-    </div>
-   </div>
-   </div>
-<!-- fine card solo mobile-->   
- 
- 
-
-   
-
-
-    </div>
-
-   
-    
-    <div class="lateralPart px-3 d-none d-md-block col-md-2 ">
-    
-      <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
-        <h3 class="titleLeft "> I tuoi amici </h3>
-        
-      <div mt-4>
-        <i class="fa-solid fa-user-plus text-white"></i>
-         <i class="fa-solid fa-xmark"></i></div>
-
-      </div>  
-      <div>
-        <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap" >
-          <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-          <div class="card-body p-0">
-            <p class="titleLeft">Nome dell'amico
-              content.</p>
-              <p class="titleLeft"> Ha ascoltato questa
-            
-              </p>
-              <p class="titleLeft"> al''ora</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-4">
-        <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap" >
-          <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-          <div class="card-body p-0">
-            <p class="titleLeft">Nome dell'amico
-              content.</p>
-              <p class="titleLeft"> Ha ascoltato questa
-            
-              </p>
-              <p class="titleLeft"> al''ora</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  
-</div>
-
-  
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</body>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
