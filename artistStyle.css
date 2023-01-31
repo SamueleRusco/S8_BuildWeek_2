@@ -34,28 +34,29 @@ h1 {
 .fa-circle-play {
   color: rgb(2, 235, 2);
   width: 50px;
-  font-size: 50px;
+  font-size: 30px;
 }
 .fa-ellipsis {
   color: rgb(164, 160, 160);
   width: 50px;
-  font-size: 30px;
+  font-size: 20px;
 }
 h3 {
   color: white !important;
-  font-size: 2vw !important;
+  font-size: 0.8vw !important;
   font-weight: 500 !important;
+  margin: 0 !important;
 }
 .polaroid {
   width: 30px;
 }
 .numAscolti {
   color: rgb(176, 173, 173) !important;
-  font-size: 1.7vw !important;
+  font-size: 0.7vw !important;
 }
 .visualizza {
   color: rgb(176, 173, 173) !important;
-  font-size: 1.5vw !important;
+  font-size: 1.2vw !important;
 }
 .contenuto {
   background: rgb(33, 33, 33);
@@ -64,4 +65,15 @@ h3 {
     rgba(33, 33, 33, 1) 0%,
     rgba(18, 18, 18, 1) 100%
   );
+}
+h6 {
+  font-size: 0.8vw !important;
+  color: rgb(111, 107, 107) !important;
+  margin: 0 !important;
+}
+h2 {
+  color: white !important;
+  font-size: 1.5vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
 }
