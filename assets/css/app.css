@@ -19,8 +19,9 @@ body {
 
 p {
   color: white;
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin-bottom: 2px;
+  font-weight: 600important;
 }
 
 h5 {
@@ -30,7 +31,12 @@ h5 {
 h6 {
   color: rgb(123, 123, 123);
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 1em;
+}
+
+.artistText {
+  font-size: 0.6em;
+  font-weight: 400;
 }
 
 .centerPart {

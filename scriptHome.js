@@ -21,9 +21,9 @@ const asyncWait = async function (url, where) {
             alt="..."
           />
           <div class="card-body">
-            <h6 class="card-title">${jarray[i].title}</h6>
-            <p class="card-text">${jarray[i].album.title}</p>
-            <p class="card-text">${jarray[i].artist.name}</p>
+            <h6 class="card-title fw-bolder" >${jarray[i].title}</h6>
+            <p class="card-text fw-light ">${jarray[i].album.title}</p>
+            <p class="card-text fst-italic artistText">${jarray[i].artist.name}</p>
 
           </div>
         </div>
@@ -62,15 +62,15 @@ const asyncWait = async function (url, where) {
             <img
               style="width: 200px"
               src="${jarray[0].album.cover_xl}"
-              class="card-img-top"
+              class="card-img-top mx-3"
               alt="..."
             />
             </div>
             <div class="col-3 mycardText text-white mb-4">
-            <p class="card-text titleLeft mt-2">${jarray[0].album.title}</p>
-            <h6 class="card-title pBold fs-1 mt-4 mb-3">${jarray[0].title}</h6>
-            <p class="card-text mb-3">${jarray[0].artist.name}</p>
-            <p class="card-text mb-3">${jarray[0].album.title}</p>
+            <p class="card-text titleLeft mt-2">Album</p>
+            <h6 class="card-title pBold fs-1 mt-4 mb-3 " role='button'>${jarray[0].title}</h6>
+            <p class="card-text mb-3 " role='button' id="artistClick">${jarray[0].artist.name}</p>
+            <p class="card-text mb-3 " role='button'>${jarray[0].album.title}</p>
             
             <div class="d-flex flex-row">
               <a
@@ -91,6 +91,13 @@ const asyncWait = async function (url, where) {
             nascondi annunci</button
             ><!-- -->`;
       }
+      // funzione di prova non fa nulla!
+      function clicked(event) {
+        console.log(event.target.innerHTML);
+      }
+
+      let artist = document.getElementById("artistClick");
+      artist.addEventListener("click", clicked);
     }
   } catch (err) {
     console.log(err);
@@ -100,4 +107,4 @@ const asyncWait = async function (url, where) {
 asyncWait("hello", "cardDiv");
 
 asyncWait("pink floyd", "buonasera");
-asyncWait("hello", "first");
+asyncWait("rem", "first");
