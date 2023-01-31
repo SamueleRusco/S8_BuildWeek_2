@@ -13,7 +13,7 @@ const asyncWait = async function (url, where) {
           div.innerHTML += `
 
 
-        <div class="col">
+        <div class="col d-flex my-2">
         <div class="card mycardpiace">
           <img
             src="${element.album.cover_xl}"
@@ -58,7 +58,7 @@ const asyncWait = async function (url, where) {
       } else if (where === "first") {
         div.innerHTML += `
       
-            <div class="col-4 col-md-3 h-100">
+            <div class="col-4 col-md-3 h-100 d">
             <img
               class="background h-100 w-100 p-3"
               src="${jarray[0].album.cover_xl}"
@@ -99,5 +99,5 @@ const asyncWait = async function (url, where) {
 
 asyncWait("hello", "cardDiv");
 
-asyncWait("hello", "buonasera");
+asyncWait("pink floyd", "buonasera");
 asyncWait("hello", "first");
