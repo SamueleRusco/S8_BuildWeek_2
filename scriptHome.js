@@ -9,29 +9,29 @@ const asyncWait = async function (url, where) {
       const jarray = Object.values(array[0]);
       let div = document.getElementById(where);
       if (where === "cardDiv") {
-        jarray.forEach((element) => {
+        for (let i = 0; i < 10; i++) {
           div.innerHTML += `
 
 
         <div class="col d-flex my-2">
         <div class="card mycardpiace">
           <img
-            src="${element.album.cover_xl}"
+            src="${jarray[i].album.cover_xl}"
             class="card-img-top p-2 rounded-4"
             alt="..."
           />
           <div class="card-body">
-            <h6 class="card-title">${element.title}</h6>
-            <p class="card-text">${element.album.title}</p>
-            <p class="card-text">${element.artist.name}</p>
+            <h6 class="card-title">${jarray[i].title}</h6>
+            <p class="card-text">${jarray[i].album.title}</p>
+            <p class="card-text">${jarray[i].artist.name}</p>
 
           </div>
         </div>
       </div>
         `;
-        });
+        }
       } else if (where === "buonasera") {
-        jarray.forEach((element) => {
+        for (let i = 0; i < 6; i++) {
           div.innerHTML += `
     
     
@@ -41,20 +41,20 @@ const asyncWait = async function (url, where) {
             <div class="row g-0 h-100 d-flex align-items-center">
               <div class="col-4 h-100">
                 <img
-                  src=" ${element.album.cover_xl}"
+                  src=" ${jarray[i].album.cover_xl}"
                   class="img-fluid rounded-start imgcardsmall h-100"
                   alt="..."
                 />
               </div>
               <div class="col-8">
                 <div class="card-body justify-content-center">
-                  <h6 class="card-title fs-6 fs-md-3 mb-0">${element.artist.name}</h6>
+                  <h6 class="card-title fs-6 fs-md-3 mb-0">${jarray[i].artist.name}</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>`;
-        });
+        }
       } else if (where === "first") {
         div.innerHTML += `
       
