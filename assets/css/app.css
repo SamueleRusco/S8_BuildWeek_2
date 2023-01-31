@@ -79,11 +79,11 @@ h6 {
   background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
 
-@media screen and (max-width: 500px) {
-  #cardprova {
-    display: none;
-  }
-}
+/*
+    @media screen and (max-width: 500px) {
+       #cardprova{
+        display:none;
+       } } */
 .mycard img {
   width: 30%;
 }
@@ -126,10 +126,4 @@ h6 {
 .mycardAmico img {
   width: 20px;
   height: 20px;
-}
-
-@media screen and (max-width: 500px) {
-  .centerPart {
-    width: 100%;
-  }
 }/*# sourceMappingURL=app.css.map */
