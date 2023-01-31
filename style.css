@@ -1,19 +1,14 @@
 body {
     width: 100vw;
     /* background: rgb(180, 156, 66); */
-    background-color: black position: relative;
+    background-color: black;
+    position: relative;
     height: 100vh;
     margin: 0;
     padding: 0;
-
-
-<<<<<<< Updated upstream
-
-main {
     width: 100vw;
     height: 100vh;
-=======
->>>>>>> Stashed changes
+
 }
 
 
@@ -66,7 +61,6 @@ footer {
     bottom: 0;
 }
 
-<<<<<<< Updated upstream
 .footerMobile {
     display: none
 }
@@ -266,9 +260,31 @@ i:hover {
 
 .volume-bar .progress-bar:hover .progress::after {
     --size: .8em;
-=======
-section {
-    margin: 0;
-    padding: 0;
->>>>>>> Stashed changes
+
+}
+
+.hero {
+    height: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    background-color: darkgreen;
+    color: pink;
+}
+
+.hero .btn {
+    background-color: pink;
+    color: darkgreen;
+}
+
+.page-footer {
+    height: 400px;
+    padding-top: 60px;
+    background-color: black;
+    color: lightgray;
 }
