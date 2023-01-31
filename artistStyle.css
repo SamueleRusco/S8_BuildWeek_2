@@ -41,6 +41,9 @@ h1 {
   width: 50px;
   font-size: 20px;
 }
+.fa-ellipsis-vertical {
+  color: rgb(164, 160, 160);
+}
 h3 {
   color: white !important;
   font-size: 0.8vw !important;
@@ -56,7 +59,7 @@ h3 {
 }
 .visualizza {
   color: rgb(176, 173, 173) !important;
-  font-size: 1.2vw !important;
+  font-size: 0.8vw !important;
 }
 .contenuto {
   background: rgb(33, 33, 33);
@@ -76,4 +79,51 @@ h2 {
   font-size: 1.5vw !important;
   font-weight: 500 !important;
   margin: 0 !important;
+}
+.myButton {
+  font-size: 0.8vw !important;
+}
+h4 {
+  color: white !important;
+  font-size: 0.8vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 12vw !important;
+    font-weight: 700 !important;
+  }
+
+  .imgArtist {
+    width: 80px !important;
+  }
+  h3 {
+    font-size: 3.5vw !important;
+    font-weight: 400 !important;
+  }
+  .numAscolti {
+    font-size: 2vw !important;
+    font-weight: 400 !important;
+  }
+  h2 {
+    font-size: 3.5vw !important;
+  }
+  .like {
+    font-size: 2vw !important;
+  }
+  .artistLike {
+    font-size: 1.5vw !important;
+  }
+  .artistlikeImg {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  h5 {
+    color: rgb(111, 107, 107) !important;
+    font-size: 2.5vw !important;
+  }
+  .visualizza {
+    font-size: 1.8vw !important;
+  }
 }
