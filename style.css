@@ -11,6 +11,11 @@ body {
 
 }
 
+.immagineAlbum {
+    width: fit-content;
+}
+
+
 
 .card {
     border-radius: 0%;
@@ -62,11 +67,16 @@ footer {
 }
 
 .footerMobile {
-    display: none
+    display: none;
+    color: #0000
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     footer {
+        display: none;
+    }
+
+    .lateralPart {
         display: none;
     }
 
