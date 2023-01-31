@@ -6,13 +6,16 @@ body {
     margin: 0;
     padding: 0;
 
-}
 
+<<<<<<< Updated upstream
 
 main {
     width: 100vw;
     height: 100vh;
+=======
+>>>>>>> Stashed changes
 }
+
 
 .card {
     border-radius: 0%;
@@ -63,6 +66,7 @@ footer {
     bottom: 0;
 }
 
+<<<<<<< Updated upstream
 .footerMobile {
     display: none
 }
@@ -262,4 +266,9 @@ i:hover {
 
 .volume-bar .progress-bar:hover .progress::after {
     --size: .8em;
+=======
+section {
+    margin: 0;
+    padding: 0;
+>>>>>>> Stashed changes
 }
