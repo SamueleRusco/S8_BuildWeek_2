@@ -71,29 +71,48 @@
 
 
 
-        <section class="col-7 mainbar  p-0">
+        <section class="col-12 col-md-7 mainbar  p-0">
 
             <div class="header">
+
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 containerAlbum">
+                            <img src="https://place.dog/300/200" class="immagineAlbum" alt="immagine canzone">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="text-white">TITOLO CANZONE</h2>
+
+                                <p class="card-text"><small class="text-white"><img src="..."
+                                            alt="immagine artisti"><span>qui andrà il nome
+                                            dell'artista</span><span> • </span><span>artisti</span><span> • </span>
+                                        <span></span>somma di durata canzoni album</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="card">
 
                     <div class="row g-0">
                         <div class="col">
-                            <img src="https://place.dog/300/200" class=" " alt="immagine canzone">
+
                         </div>
 
                         <div class="col-md-10 d-flex align-items-end justify-content-start p-0">
                             <div class="card-body ms-5 mb-4">
-                                <h6 class="text-white">Card title</h6>
-                                <h1 class="text-white">TITOLO CANZONE</h1>
-                                <p class="card-text"><small class="text-white"><img src="..."
-                                            alt="immagine artisti"><span>qui andrà il nome
-                                            dell'artista</span><span> • </span><span>artisti</span><span> • </span>
-                                        <span></span>somma di durata canzoni album</small></p>
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
 
             <div class="songBar">
@@ -144,16 +163,55 @@
         </section>
 
 
-        <section class="col-2 navbar2 bg-primary">
+        <div class="lateralPart px-3 .d-sm-none col-lg-2">
 
-        </section>
+            <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
+                <h3 class="titleLeft "> I tuoi amici </h3>
+
+                <div mt-4>
+                    <i class="fa-solid fa-user-plus text-white"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <div>
+                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
+                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
+                    <div class="card-body p-0">
+                        <p class="titleLeft">Nome dell'amico
+                            content.</p>
+                        <p class="titleLeft"> Ha ascoltato questa
+
+                        </p>
+                        <p class="titleLeft"> al''ora</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
+                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
+                    <div class="card-body p-0">
+                        <p class="titleLeft">Nome dell'amico
+                            content.</p>
+                        <p class="titleLeft"> Ha ascoltato questa
+
+                        </p>
+                        <p class="titleLeft"> al''ora</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
 
 
 
         <footer>
 
 
-            <div class="music-player row">
+            <div class="music-player row d-none d-md-flex">
 
 
                 <div class="song-bar col-3">
@@ -209,21 +267,28 @@
             </div>
         </footer>
         <div class="footerMobile g-0 d-flex  flex-column justify-content-center">
-            <div class=" player d-flex justify-content-end">
-                <p>testo Che gira</p>
-                <i class="fa-solid fa-display m-2"></i>
-                <i class="fa-regular fa-heart m-2"></i>
-                <i class="fa-solid fa-play m-2"></i>
+            <div class=" player d-flex justify-content-end align-items-baseline">
+                <p class="w-40">testo Che gira</p>
+                <i class="fa-solid fa-display m-3"></i>
+                <i class="fa-regular fa-heart m-3"></i>
+                <i class="fa-solid fa-play m-3"></i>
 
             </div>
-            <div class="footerBar ">
+            <div class="footerBar d-flex d-md-none justify-content-around w-100 ">
                 <div><i class="fa-solid fa-house"></i>
                     <p>home</p>
+                </div>
+                <div><i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Cerca</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <p>libreria</p>
                 </div>
             </div>
 
 
-            <div></div>
+
 
         </div>
     </main>
