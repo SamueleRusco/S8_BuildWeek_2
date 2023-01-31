@@ -13,7 +13,7 @@ const asyncWait = async function (url, where) {
           div.innerHTML += `
 
 
-        <div class="col d-flex my-2">
+        <div class="col d-flex my-2 mycardpiacecontainer">
         <div class="card mycardpiace">
           <img
             src="${jarray[i].album.cover_xl}"

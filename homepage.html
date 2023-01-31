@@ -88,6 +88,7 @@
           id="first"
         ></div>
 
+
         <!-- fine prima card-->
         <div class="my-3 d-flex justify-content-between">
           <h6>Buonasera</h6>
@@ -105,10 +106,35 @@
         <div class="contenitoreCardPiccole">
           <!--  card PICCOLA -->
           <div
-            class="row row-cols-2 row-cols-md-3 gx-3 d-flex justify-content-evenly"
+            class="row row-cols-2 row-cols-xl-3 gx-3 d-flex justify-content-evenly"
             id="buonasera"
-          ></div>
+          >
+        </div>
 
+
+        <div class="col d-flex my-2 mycardpiacecontainer">
+          <div class="card mycardpiace">
+            <div class="position-relative"> 
+            
+            <div class="position-absolute bottom-0 end-0"> 
+              <i id="playhover" class="fa-sharp fa-solid fa-circle-play me-4 mb-3"></i>
+            </div>
+        
+            <img
+              src="http://placekitten.com/200
+              "
+              class="card-img-top p-2 rounded-4"
+              alt="..."
+            />
+          </div> 
+            <div class="card-body">
+              <h6 class="card-title fw-bolder" role='button' >${jarray[i].title}</h6>
+              <p class="card-text fw-light " role='button'>${jarray[i].album.title}</p>
+              <p class="card-text fst-italic artistText" role='button'>${jarray[i].artist.name}</p>
+  
+            </div>
+          </div>
+        </div>
           <!-- ultime card piccoline -->
           <div class="d-none d-md-block">
             <div><h3>Altro di ciò che ti piace</h3></div>
