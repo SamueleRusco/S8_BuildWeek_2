@@ -1,0 +1,67 @@
+.leftSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+.rightSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+.middleSection {
+  background-color: rgb(18, 18, 18);
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.immagineCopertina {
+  width: 100%;
+  height: 30%;
+  background-image: url("https://www.themusicblog.eu/wp-content/uploads/2022/07/musica-rock-luglio-2022.jpg");
+  background-size: cover;
+}
+.all {
+  height: 1000px;
+}
+h5 {
+  font-size: 0.7vw !important;
+  color: white !important;
+  margin: 0 !important;
+}
+h1 {
+  font-size: 5vw !important;
+  font-weight: 800 !important;
+}
+.fa-circle-play {
+  color: rgb(2, 235, 2);
+  width: 50px;
+  font-size: 50px;
+}
+.fa-ellipsis {
+  color: rgb(164, 160, 160);
+  width: 50px;
+  font-size: 30px;
+}
+h3 {
+  color: white !important;
+  font-size: 2vw !important;
+  font-weight: 500 !important;
+}
+.polaroid {
+  width: 30px;
+}
+.numAscolti {
+  color: rgb(176, 173, 173) !important;
+  font-size: 1.7vw !important;
+}
+.visualizza {
+  color: rgb(176, 173, 173) !important;
+  font-size: 1.5vw !important;
+}
+.contenuto {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
