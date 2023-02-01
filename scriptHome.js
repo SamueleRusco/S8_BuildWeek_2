@@ -149,9 +149,9 @@ const asyncWait = async function (url, where) {
   }
 };
 
-window.onload = async () => {
-  await asyncWait("hello", "cardDiv");
-  await asyncWait("pink floyd", "buonasera");
-  await asyncWait("rem", "first");
-  await asyncWait("ac/dc", "containerMobile");
+window.onload = () => {
+  asyncWait("hello", "cardDiv");
+  asyncWait("pink floyd", "buonasera");
+  asyncWait("rem", "first");
+  asyncWait("ac/dc", "containerMobile");
 };

@@ -36,31 +36,40 @@ const asyncWait = async function (url, where) {
         for (let i = 0; i < jarray2.length; i++) {
           divSongs = document.createElement("div");
 
-          divSongs.innerHTML += `    <div class="d-flex mt-2 align-items-center col-12" >
-    
-
-      <div class="text-white me-3">${i + 1}</div>
+          div2.innerHTML += `   
+          <div class="d-flex row my-1 ">
+          
+          <div class="d-flex  position-relative col-12 >
+<div class="d-flex ">
+      <div class="text-white mt-4 mt-md-0">${i + 1}</div>
       <img
-        class="polaroid  imgArtist me-3"
+        class="polaroid  imgArtist mx-3"
         src="${jarray2[i].album.cover_xl}"
       />
-      <div class="d-flex flex-column flex-md-row position-relative">
-        <h3 class="">${jarray2[i].title}</h3>
+      
+      <div class="d-flex flex-column flex-md-row ">
+        <h3 class="mt-2">${jarray2[i].title}</h3>
        
-        
-
-        <div class="numAscolti fw-semibold  ms-5">
+        <div class="d-flex d-block d-md-none end-0">
+        <div class="numAscolti fw-semibold  ">
           276.616.912
         </div>
-        <div class="numAscolti fw-semibold  ms-3 d-none d-md-block">
-          3:18
         </div>
 
+        <div class="numAscolti fw-semibold  d-none d-md-block position-absolute end-0 me-5 mt-2">
+        276.616.912
       </div>
-      <i
-        class="fa-solid fa-ellipsis-vertical d-block d-md-none position-absolute end-0 me-5 fs-2"
+        <div class="numAscolti fw-semibold  ms-3 d-none d-md-block position-absolute end-0 mt-2">
+          3:18
+        </div></div>
+
+ <i
+        class="fa-solid fa-ellipsis-vertical d-block d-md-none position-absolute mt-3 me-5 end-0 fs-2"
       ></i>
-    </div></div>
+
+      </div>
+     
+    </div> </div></div></div>
 
 
   `;
@@ -87,8 +96,8 @@ const asyncWait = async function (url, where) {
   }
 };
 
-window.onload = async () => {
+window.onload = () => {
   let params = new URLSearchParams(document.location.search);
   let search = params.get("search");
-  let fetchy = await asyncWait(search, "artistDiv");
+  asyncWait(search, "artistDiv");
 };
