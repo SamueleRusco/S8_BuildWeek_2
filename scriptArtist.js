@@ -1,26 +1,39 @@
 const asyncWait = async function (url, where) {
   try {
     let res = await fetch(
-      `https://striveschool-api.herokuapp.com/api/deezer/search?q=${url}`
+      `https://striveschool-api.herokuapp.com/api/deezer/artist/${url}`
     );
     if (res.ok) {
       let data = await res.json();
       const array = Object.values(data);
       const jarray = Object.values(array[0]);
+
+      console.log(jarray);
+      let newfetch = array[12];
+      let res2 = await fetch(newfetch);
+      let data2 = await res2.json();
+      const array2 = Object.values(data2);
+      console.log(array);
+
+      console.log(array2);
+      const jarray2 = Object.values(array2[0]);
       let div = document.getElementById(where);
       if (where === "artistDiv") {
         let div2 = document.getElementById("artistDiv2");
         let divCopertina = document.createElement("div");
         divCopertina.innerHTML = `<div
-    class="immagineCopertina d-flex flex-column justify-content-end px-3 pb-3"
+    class="d-flex flex-column justify-content-end px-3 pb-3" style="  width: 100%;
+    height: 300px;
+    background-image: url(${array[8]});
+    background-size: cover;"
   >
     <h5 class="d-none d-md-block">Artista verificato</h5>
-    <h1 class="text-white">${jarray[0].artist.name}</h1>
+    <h1 class="text-white">${array[1]}</h1>
     <h5 class="d-none d-md-block">3.433.158 ascoltatori mensili</h5>
   </div>`;
         div.prepend(divCopertina);
 
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < jarray2.length; i++) {
           divSongs = document.createElement("div");
 
           divSongs.innerHTML += `    <div class="d-flex mt-2 align-items-center col-12" >
@@ -29,10 +42,10 @@ const asyncWait = async function (url, where) {
       <div class="text-white me-3">${i + 1}</div>
       <img
         class="polaroid  imgArtist me-3"
-        src="${jarray[i].album.cover_xl}"
+        src="${jarray2[i].album.cover_xl}"
       />
       <div class="d-flex flex-column flex-md-row position-relative">
-        <h3 class="">${jarray[i].title}</h3>
+        <h3 class="">${jarray2[i].title}</h3>
        
         
 
@@ -58,12 +71,12 @@ const asyncWait = async function (url, where) {
         songLike.innerHTML += `<div class="d-flex align-items-center mt-4">
         <img
           class="rounded-circle artistlikeImg"
-          src="${jarray[0].album.cover}"
+          src="${jarray2[0].album.cover}"
           style="width: 40px; height: 40px"
         />
         <div class="d-flex flex-column ms-2">
-          <h4 class="like">Hai messo mi piace a ${jarray.length} brani</h4>
-          <h6 class="artistLike">Di ${jarray[0].artist.name}</h6>
+          <h4 class="like">Hai messo mi piace a ${jarray2.length} brani</h4>
+          <h6 class="artistLike">Di ${jarray2[0].artist.name}</h6>
         </div>
       </div>`;
         songLike.append(songlikeDiv);
@@ -77,5 +90,5 @@ const asyncWait = async function (url, where) {
 window.onload = async () => {
   let params = new URLSearchParams(document.location.search);
   let search = params.get("search");
-  await asyncWait(search, "artistDiv");
+  let fetchy = await asyncWait(search, "artistDiv");
 };

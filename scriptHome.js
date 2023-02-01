@@ -23,7 +23,7 @@ const asyncWait = async function (url, where) {
           <div class="card-body">
             <h6 class="card-title fw-bolder" role='button' >${jarray[i].title}</h6>
             <p class="card-text fw-light " role='button'>${jarray[i].album.title}</p>
-            <p class="card-text fst-italic artistText" role='button' id="artistClick">${jarray[i].artist.name}</p>
+            <p class="card-text fst-italic artistText artistClick" role='button' id="${jarray[0].artist.id}">${jarray[i].artist.name}</p>
 
           </div>
         </div>
@@ -48,7 +48,7 @@ const asyncWait = async function (url, where) {
 
                   alt="..."
                 />
-                  <h6 class="card-title fs-6 ms-2 fs-md-3 mb-0 " role='button' id="artistClick">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
+                  <h6 class="card-title fs-6 ms-2 fs-md-3 mb-0 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
                 </div>
             
           </div>
@@ -68,7 +68,7 @@ const asyncWait = async function (url, where) {
             <div class="col-3 mycardText text-white mb-4">
             <p class="card-text titleLeft mt-2">Album</p>
             <h6 class="card-title pBold fs-1 mt-4 mb-3 " role='button'>${jarray[0].title}</h6>
-            <p class="card-text mb-3 " role='button' id="artistClick">${jarray[0].artist.name}</p>
+            <p class="card-text mb-3 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[0].artist.name}</p>
             <p class="card-text mb-3 " role='button'>${jarray[0].album.title}</p>
             
             <div class="d-flex flex-row">
@@ -103,7 +103,7 @@ const asyncWait = async function (url, where) {
               />
             </div>
             <div class="col-6 mycardText mt-2">
-              <h6 class="card-text mt-2" id="artistClick" role='button'>${jarray[0].artist.name}</h6>
+              <h6 class="card-text mt-2 artistClick" id="${jarray[0].artist.id}" role='button'>${jarray[0].artist.name}</h6>
               
               <p class="card-text fs-5 mb-3 fst-italic fs-6">${jarray[0].album.title}</p>
               <p class="card-text fs-5 mb-3 fw-bold fs-2">${jarray[0].title}</p>
@@ -127,7 +127,7 @@ const asyncWait = async function (url, where) {
 
       // funzione di prova non fa nulla!
       async function clicked(event) {
-        let myArtist = event.target.innerHTML;
+        let myArtist = event.target.id;
 
         //await asyncWait(myArtist, "artistDiv");
 
@@ -138,7 +138,7 @@ const asyncWait = async function (url, where) {
         console.log(params.toString());
       }
 
-      let artist = document.querySelectorAll("#artistClick");
+      let artist = document.querySelectorAll(".artistClick");
 
       artist.forEach((artistN) => {
         artistN.addEventListener("click", clicked);
