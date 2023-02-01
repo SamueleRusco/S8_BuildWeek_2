@@ -23,7 +23,7 @@ const asyncWait = async function (url, where) {
           <div class="card-body">
             <h6 class="card-title fw-bolder" role='button' >${jarray[i].title}</h6>
             <p class="card-text fw-light " role='button'>${jarray[i].album.title}</p>
-            <p class="card-text fst-italic artistText" role='button'>${jarray[i].artist.name}</p>
+            <p class="card-text fst-italic artistText" role='button' id="artistClick">${jarray[i].artist.name}</p>
 
           </div>
         </div>
@@ -48,7 +48,7 @@ const asyncWait = async function (url, where) {
 
                   alt="..."
                 />
-                  <h6 class="card-title fs-6 fs-md-3 mb-0 " role='button'>${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
+                  <h6 class="card-title fs-6 fs-md-3 mb-0 " role='button' id="artistClick">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
                 </div>
             
           </div>
@@ -103,7 +103,7 @@ const asyncWait = async function (url, where) {
               />
             </div>
             <div class="col-6 mycardText mt-2">
-              <h6 class="card-text mt-2 ">${jarray[0].artist.name}</h6>
+              <h6 class="card-text mt-2" id="artistClick" role='button'>${jarray[0].artist.name}</h6>
               
               <p class="card-text fs-5 mb-3 fst-italic fs-6">${jarray[0].album.title}</p>
               <p class="card-text fs-5 mb-3 fw-bold fs-2">${jarray[0].title}</p>
@@ -126,21 +126,32 @@ const asyncWait = async function (url, where) {
       }
 
       // funzione di prova non fa nulla!
-      function clicked(event) {
-        console.log(event.target.innerHTML);
+      async function clicked(event) {
+        let myArtist = event.target.innerHTML;
+
+        //await asyncWait(myArtist, "artistDiv");
+
+        let params = new URLSearchParams(window.location.search);
+        params.set("search", myArtist);
+        // window.location.search = params;
+        window.location.href = "artistPage.html?" + params;
+        console.log(params.toString());
       }
 
-      let artist = document.getElementById("artistClick");
-      artist.addEventListener("click", clicked);
-      console.log(jarray);
+      let artist = document.querySelectorAll("#artistClick");
+
+      artist.forEach((artistN) => {
+        artistN.addEventListener("click", clicked);
+      });
     }
   } catch (err) {
     console.log(err);
   }
 };
 
-asyncWait("hello", "cardDiv");
-
-asyncWait("pink floyd", "buonasera");
-asyncWait("rem", "first");
-asyncWait("ac/dc", "containerMobile");
+window.onload = async () => {
+  await asyncWait("hello", "cardDiv");
+  await asyncWait("pink floyd", "buonasera");
+  await asyncWait("rem", "first");
+  await asyncWait("ac/dc", "containerMobile");
+};
