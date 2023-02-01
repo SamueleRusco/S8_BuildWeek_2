@@ -137,13 +137,7 @@ h6 {
   background-color: #444444;
 }
 
-.containerplay:hover {
-  opacity: 1;
-}
-
 #playhover {
-  height: 100%;
-  width: 100%;
   font-size: 50px;
   color: rgb(30, 215, 96);
   opacity: 0;
@@ -151,5 +145,4 @@ h6 {
 
 #playhover:hover {
   opacity: 1;
-  background: none;
 }/*# sourceMappingURL=app.css.map */
