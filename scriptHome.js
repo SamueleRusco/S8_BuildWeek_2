@@ -23,7 +23,7 @@ const asyncWait = async function (url, where) {
           <div class="card-body">
             <h6 class="card-title fw-bolder" role='button' >${jarray[i].title}</h6>
             <p class="card-text fw-light " role='button'>${jarray[i].album.title}</p>
-            <p class="card-text fst-italic artistText artistClick" role='button' id="${jarray[0].artist.id}">${jarray[i].artist.name}</p>
+            <p class="card-text fst-italic artistText artistClick" role='button' id="${jarray[i].artist.id}">${jarray[i].artist.name}</p>
 
           </div>
         </div>
