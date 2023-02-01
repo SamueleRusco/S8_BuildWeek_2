@@ -6,8 +6,9 @@ body {
 }
 p {
   color: white;
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin-bottom: 2px;
+  font-weight: 600important;
 }
 
 h5 {
@@ -17,9 +18,12 @@ h5 {
 h6 {
   color: rgb(123, 123, 123);
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 1em;
 }
-
+.artistText {
+  font-size: 0.6em;
+  font-weight: 400;
+}
 .centerPart {
   background: rgb(33, 33, 33);
   background: linear-gradient(
@@ -39,9 +43,6 @@ h6 {
 
 .lateralPart {
   background-color: black;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
 }
 .titleLeft {
   font-size: 0.7rem;
@@ -60,28 +61,25 @@ h6 {
 
 /* css card annuncio */
 
-.miaCarta {
+.mycard {
   width: 100%;
-  display: flex;
-  flex-direction: row;
   background: rgb(38, 38, 38);
   background: linear-gradient(225deg, rgb(38, 38, 38) 0%, rgb(14, 14, 14) 100%);
 }
+/*
+    @media screen and (max-width: 500px) {
+       #cardprova{
+        display:none;
+       } } */
 
-@media screen and (max-width: 500px) {
-  #cardprova {
-    display: none !important;
-  }
-}
-
-.miaCarta img {
+.mycard img {
   width: 30%;
 }
-.miaCarta div h5 {
+.mycard div h5 {
   font-weight: bolder;
 }
 
-.miaCartaText {
+.mycardText {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
@@ -98,7 +96,6 @@ h6 {
   width: 100px;
 }
 .mycardsmall {
-  height: 60px;
   background-color: #444444;
 }
 
@@ -117,8 +114,18 @@ h6 {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .centerPart {
-    width: 100%;
-  }
+.mycardsmall :hover {
+  background-color: #232323;
+}
+.mycardpiacecontainer :hover {
+  background-color: #444444;
+}
+#playhover {
+  font-size: 40px;
+  color: $verdeSpotify;
+  opacity: 0;
+}
+
+#playhover:hover {
+  opacity: 1;
 }

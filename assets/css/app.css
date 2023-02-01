@@ -10,6 +10,160 @@
   color: rgb(80, 80, 80);
 }
 
+.leftSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+
+.rightSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+
+.middleSection {
+  background-color: rgb(18, 18, 18);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.immagineCopertina {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://www.themusicblog.eu/wp-content/uploads/2022/07/musica-rock-luglio-2022.jpg");
+  background-size: cover;
+}
+
+.all {
+  height: 1000px;
+}
+
+h5 {
+  font-size: 0.7vw !important;
+  color: white !important;
+  margin: 0 !important;
+}
+
+h1 {
+  font-size: 5vw !important;
+  font-weight: 800 !important;
+}
+
+.fa-shuffle {
+  color: rgb(2, 235, 2);
+  font-size: 25px;
+}
+
+.fa-circle-play {
+  color: rgb(2, 235, 2);
+  width: 50px;
+  font-size: 30px;
+}
+
+.fa-ellipsis {
+  color: rgb(164, 160, 160);
+  width: 50px;
+  font-size: 20px;
+}
+
+.fa-ellipsis-vertical {
+  color: rgb(164, 160, 160);
+}
+
+h3 {
+  color: white !important;
+  font-size: 0.8vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+.polaroid {
+  width: 30px;
+}
+
+.numAscolti {
+  color: rgb(176, 173, 173) !important;
+  font-size: 0.7vw !important;
+}
+
+.visualizza {
+  color: rgb(176, 173, 173) !important;
+  font-size: 0.8vw !important;
+}
+
+.contenuto {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
+}
+
+h6 {
+  font-size: 0.8vw !important;
+  color: rgb(111, 107, 107) !important;
+  margin: 0 !important;
+}
+
+h2 {
+  color: white !important;
+  font-size: 1.5vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+.myButton {
+  font-size: 0.8vw !important;
+}
+
+h4 {
+  color: white !important;
+  font-size: 0.8vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 12vw !important;
+    font-weight: 700 !important;
+  }
+  .imgArtist {
+    width: 80px !important;
+  }
+  h3 {
+    font-size: 3.5vw !important;
+    font-weight: 400 !important;
+  }
+  .numAscolti {
+    font-size: 2vw !important;
+    font-weight: 400 !important;
+  }
+  h2 {
+    font-size: 3.5vw !important;
+  }
+  .like {
+    font-size: 2vw !important;
+  }
+  .artistLike {
+    font-size: 1.5vw !important;
+  }
+  .artistlikeImg {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  h5 {
+    color: rgb(111, 107, 107) !important;
+    font-size: 2.5vw !important;
+  }
+  .visualizza {
+    font-size: 1.8vw !important;
+  }
+}
+.numeroascolti {
+  position: relative;
+  left: 216px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -144,4 +298,288 @@ h6 {
 
 #playhover:hover {
   opacity: 1;
+}
+
+footer {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.footerMobile {
+  display: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+  .lateralPart {
+    display: none;
+  }
+  .footerMobile {
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 35%, rgba(0, 212, 255, 0) 100%);
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: block;
+  }
+  .player {
+    width: 95vw;
+    background-color: rgb(46, 46, 46);
+  }
+}
+.music-player {
+  --primary-color: #ddd;
+  --secondary-color: #999;
+  --green-color: #2d5;
+  --padding: 1em;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 7rem;
+  padding: var(--padding);
+  color: var(--primary-color);
+}
+
+i {
+  color: var(--secondary-color);
+}
+
+i:hover {
+  color: var(--primary-color);
+}
+
+.song-bar {
+  position: absolute;
+  left: var(--padding);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 25%;
+}
+
+.audio {
+  width: 30%;
+}
+
+.song-infos {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.image {
+  --size: 4.5em;
+  flex-shrink: 0;
+  width: var(--size);
+  height: var(--size);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.song-description p {
+  margin: 0.2em;
+}
+
+.title,
+.artist {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.title:hover,
+.artist:hover {
+  text-decoration: underline;
+}
+
+.artist {
+  color: var(--secondary-color);
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+}
+
+.progress-controller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  color: var(--secondary-color);
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.play-pause {
+  display: inline-block;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: #111;
+  border-radius: 50%;
+}
+
+.play-pause:hover {
+  transform: scale(1.1);
+  color: #111;
+}
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: rgba(204, 204, 204, 0.2666666667);
+}
+
+.progress {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.progress-bar:hover .progress {
+  background-color: var(--green-color);
+}
+
+.progress-bar:hover .progress::after {
+  content: "";
+  position: absolute;
+  --size: 1em;
+  width: var(--size);
+  height: var(--size);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translate(50%, calc(2px - 50%));
+}
+
+.other-features {
+  position: absolute;
+  right: var(--padding);
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.volume-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.volume-bar .progress-bar {
+  width: 6em;
+}
+
+.volume-bar .progress-bar:hover .progress::after {
+  --size: 0.8em;
+}
+
+.hero {
+  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background-color: darkgreen;
+  color: pink;
+}
+
+.hero .btn {
+  background-color: pink;
+  color: darkgreen;
+}
+
+.page-footer {
+  height: 400px;
+  padding-top: 60px;
+  background-color: black;
+  color: lightgray;
+}
+
+body {
+  width: 100vw;
+  /* background: rgb(180, 156, 66); */
+  background-color: black;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 0%;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  border: 0px;
+}
+
+section {
+  background-color: black;
+}
+
+.header {
+  background: rgb(116, 100, 41);
+  background: linear-gradient(0deg, rgb(116, 100, 41) 3%, rgb(227, 196, 81) 100%);
+}
+
+.songBar {
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 3%, rgb(90, 78, 32) 100%);
+}
+
+.nav-link {
+  color: white;
+  font-size: 2em;
+}
+
+#play {
+  color: rgb(46, 252, 0);
+}
+
+.table {
+  color: white;
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */
