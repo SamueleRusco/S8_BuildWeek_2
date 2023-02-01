@@ -112,7 +112,6 @@ h6 {
 }
 
 .mycardsmall {
-  height: 60px;
   background-color: #444444;
 }
 
@@ -138,7 +137,7 @@ h6 {
 }
 
 #playhover {
-  font-size: 50px;
+  font-size: 40px;
   color: rgb(30, 215, 96);
   opacity: 0;
 }

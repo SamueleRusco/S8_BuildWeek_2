@@ -13,7 +13,7 @@ const asyncWait = async function (url, where) {
           div.innerHTML += `
 
 
-        <div class="col d-flex my-2 mycardpiacecontainer">
+        <div class="col d-flex my-2">
         <div class="card mycardpiace">
           <img
             src="${jarray[i].album.cover_xl}"
@@ -35,23 +35,22 @@ const asyncWait = async function (url, where) {
           div.innerHTML += `
     
     
-
           <div class="col">
           <div class="card mycardsmall mb-3">
-            <div class="row g-0 h-100 d-flex align-items-center">
-              <div class="col-4 h-100">
+           
+              
+              
+                <div class="card-body justify-content-between d-flex align-items-center p-0 pe-2"> 
                 <img
                   src=" ${jarray[i].album.cover_xl}"
-                  class="img-fluid rounded-start imgcardsmall h-100"
+                  class="rounded-start img-fluid "
+                  style="width:80px; height:80px;"
+
                   alt="..."
                 />
-              </div>
-              <div class="col-8">
-                <div class="card-body justify-content-center">
-                  <h6 class="card-title fs-6 fs-md-3 mb-0" role='button'>${jarray[i].artist.name}</h6>
+                  <h6 class="card-title fs-6 fs-md-3 mb-0 " role='button'>${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
                 </div>
-              </div>
-            </div>
+            
           </div>
         </div>`;
         }
@@ -90,7 +89,42 @@ const asyncWait = async function (url, where) {
             >
             nascondi annunci</button
             ><!-- -->`;
+      } else if (where === "containerMobile") {
+        for (let i = 0; i < 6; i++) {
+          div.innerHTML += `
+          <div class="card mycard d-block d-md-none my-3">
+          <div class="d-flex flex-row">
+            <div class="col-6 col-md-3 h-100">
+              <img
+                class="background h-100 w-100 p-3"
+                src="${jarray[0].album.cover_xl}"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-6 mycardText mt-2">
+              <h6 class="card-text mt-2 ">${jarray[0].artist.name}</h6>
+              
+              <p class="card-text fs-5 mb-3 fst-italic fs-6">${jarray[0].album.title}</p>
+              <p class="card-text fs-5 mb-3 fw-bold fs-2">${jarray[0].title}</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-b mx-3 my-2">
+            <div class="d-flex">
+              <i class="fa-solid fa-heart text-white me-4"></i>
+              <i class="fa-solid fa-bookmark text-white me-2"></i>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
+            </div>
+          </div>
+        </div>
+    
+          `;
+        }
       }
+
       // funzione di prova non fa nulla!
       function clicked(event) {
         console.log(event.target.innerHTML);
@@ -98,6 +132,7 @@ const asyncWait = async function (url, where) {
 
       let artist = document.getElementById("artistClick");
       artist.addEventListener("click", clicked);
+      console.log(jarray);
     }
   } catch (err) {
     console.log(err);
@@ -108,3 +143,4 @@ asyncWait("hello", "cardDiv");
 
 asyncWait("pink floyd", "buonasera");
 asyncWait("rem", "first");
+asyncWait("ac/dc", "containerMobile");

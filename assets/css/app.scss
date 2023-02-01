@@ -98,7 +98,6 @@ h6 {
   width: 100px;
 }
 .mycardsmall {
-  height: 60px;
   background-color: #444444;
 }
 
@@ -108,7 +107,6 @@ h6 {
 
 .mycardpiace {
   background-color: #232323;
-  
 }
 
 .mycardAmico {
@@ -118,25 +116,18 @@ h6 {
   }
 }
 
-.mycardsmall :hover{
+.mycardsmall :hover {
   background-color: #232323;
-  
 }
-.mycardpiacecontainer :hover{
+.mycardpiacecontainer :hover {
   background-color: #444444;
-  
-
-
 }
 #playhover {
-  
-  font-size: 50px ;
-color: $verdeSpotify;
-opacity: 0;}
+  font-size: 40px;
+  color: $verdeSpotify;
+  opacity: 0;
+}
 
-#playhover:hover{
-opacity: 1;
-
-
-
+#playhover:hover {
+  opacity: 1;
 }
