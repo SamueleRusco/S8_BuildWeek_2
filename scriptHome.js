@@ -48,7 +48,7 @@ const asyncWait = async function (url, where) {
 
                   alt="..."
                 />
-                  <h6 class="card-title fs-6 fs-md-3 mb-0 " role='button' id="artistClick">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
+                  <h6 class="card-title fs-6 ms-2 fs-md-3 mb-0 " role='button' id="artistClick">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
                 </div>
             
           </div>
