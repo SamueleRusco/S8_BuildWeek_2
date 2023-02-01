@@ -15,7 +15,7 @@ body {
 }
 .immagineCopertina {
   width: 100%;
-  height: 30%;
+  height: 300px;
   background-image: url("https://www.themusicblog.eu/wp-content/uploads/2022/07/musica-rock-luglio-2022.jpg");
   background-size: cover;
 }
