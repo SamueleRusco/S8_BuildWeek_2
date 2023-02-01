@@ -13,63 +13,49 @@
 <body>
     <main class="row g-0">
 
-        <div class="lateralPart px-3 col-3 ">
+        <div class="px-3 d-none d-md-block col-md-3 bg-black"></div>
 
+
+        <div class="position-fixed top-0 start-0 px-3 d-none d-md-block col-md-3">
             <div>
-                <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="">
+                <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="" />
             </div>
 
-            <div class="d-flex flex-column text-white ">
-
+            <div class="d-flex flex-column text-white">
                 <div class="ContainerIcon mt-3 my-2">
                     <i class="fa-solid fa-house text-white me-2"></i>
-                    <h3 class="titleLeft"> Home</h3>
+                    <h3 class="titleLeft">Home</h3>
                 </div>
                 <div class="ContainerIcon my-2">
-
                     <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
-                    <h3 class="titleLeft" id="searchButton"> Cerca</h3>
-
-
-
+                    <h3 class="titleLeft">Cerca</h3>
                 </div>
                 <div class="ContainerIcon my-2">
                     <i class="fa-solid fa-book-open me-2"></i>
-                    <h3 class="titleLeft"> La tua libreria</h3>
+                    <h3 class="titleLeft">La tua libreria</h3>
                 </div>
                 <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-square-plus text-white me-2 "></i>
-                    <h3 class="titleLeft">Crea la tua playlist </h3>
+                    <i class="fa-solid fa-square-plus text-white me-2"></i>
+                    <h3 class="titleLeft">Crea la tua playlist</h3>
                 </div>
                 <div class="ContainerIcon my-2">
                     <i class="fa-solid fa-heart text-white me-2"></i>
-                    <h3 class="titleLeft me-1">Brani che ti piacicono </h3>
+                    <h3 class="titleLeft me-1">Brani che ti piacicono</h3>
                 </div>
                 <div class="ContainerIcon my-2">
                     <i class="fa-solid fa-bookmark text-white me-2"></i>
-                    <h3 class="titleLeft">I tuoi episodi </h3>
+                    <h3 class="titleLeft">I tuoi episodi</h3>
                 </div>
-
-
-
-
             </div>
 
+            <hr />
 
-
-            <hr>
-
-            <div class=" playlist">
-                <p> nome playlist
-                </p>
-                <p> nome playlist
-                </p>
-                <p> nome playlist
-                </p>
-                <p> nome playlist
-                </p>
-                <p> nome playlist
-                </p>
+            <div class="playlist">
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
             </div>
         </div>
 
@@ -154,48 +140,45 @@
         </section>
 
 
-        <div class="lateralPart px-3 .d-sm-none col-lg-2">
+        <div class="px-3 d-none d-md-block col-md-2 bg-black"></div>
+        <div class="lateralPart px-3 .d-sm-none col-md-2">
 
-            <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
-                <h3 class="titleLeft "> I tuoi amici </h3>
+            <div class="position-fixed top-0 end-0 px-3 d-none d-md-block col-md-2">
+                <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
+                    <h3 class="titleLeft">I tuoi amici</h3>
 
-                <div mt-4>
-                    <i class="fa-solid fa-user-plus text-white"></i>
-                    <i class="fa-solid fa-xmark"></i>
+                    <div mt-4>
+                        <i class="fa-solid fa-user-plus text-white"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+                        <img src="https://pyxis.nymag.com/v1/imgs/55c/50d/92b3f892b6d460f9f0fcd90b30a4f57d22-10-momo.rsquare.w330.jpg"
+                            class="m-2 card-img-top rounded-circle" alt="..." />
+                        <div class="card-body p-0">
+                            <p class="titleLeft">Mauro</p>
+                            <p class="titleLeft">Ha ascoltato Beatles</p>
+                            <p class="titleLeft">1h fa</p>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div>
-                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
-                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-                    <div class="card-body p-0">
-                        <p class="titleLeft">Nome dell'amico
-                            content.</p>
-                        <p class="titleLeft"> Ha ascoltato questa
-
-                        </p>
-                        <p class="titleLeft"> al''ora</p>
+                <div class="mt-4">
+                    <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+                        <img src="https://img-9gag-fun.9cache.com/photo/anQbj0o_460s.jpg"
+                            class="m-2 card-img-top rounded-circle" alt="..." />
+                        <div class="card-body p-0">
+                            <p class="titleLeft">Piero</p>
+                            <p class="titleLeft">Ha ascoltato PesteNoire</p>
+                            <p class="titleLeft">14 min fa</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="mt-4">
-                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
-                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-                    <div class="card-body p-0">
-                        <p class="titleLeft">Nome dell'amico
-                            content.</p>
-                        <p class="titleLeft"> Ha ascoltato questa
-
-                        </p>
-                        <p class="titleLeft"> al''ora</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        </div>
+
 
 
 
@@ -259,7 +242,7 @@
         </footer>
         <div class="footerMobile g-0 d-flex  flex-column justify-content-center">
             <div class=" player d-flex justify-content-end align-items-baseline">
-                <p class="w-40">testo Che gira</p>
+                <p class="w-40 d-md-none">testo Che gira</p>
                 <i class="fa-solid fa-display m-3"></i>
                 <i class="fa-regular fa-heart m-3"></i>
                 <i class="fa-solid fa-play m-3"></i>
