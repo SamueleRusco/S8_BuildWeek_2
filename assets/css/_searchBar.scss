@@ -1,0 +1,31 @@
+.centralPartSearc {
+  background-color: black;
+}
+.searchTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #dcdcdc;
+  }
+}
+
+.inputSearch {
+  width: 90%;
+  background-color: rgba(0, 128, 0, 0);
+  border: none;
+  color: white;
+}
+::placeholder {
+  font-weight: 600;
+  color: #979797;
+}
+.searchBar {
+  background-color: #1b1b1b;
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #e4e4e4;
+}

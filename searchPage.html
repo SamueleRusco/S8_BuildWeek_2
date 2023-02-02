@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <title>Search page</title>
+</head>
+
+
+<body>
+    <div class="d-flex bg-black">
+        <div class="px-3 d-none d-md-block col-md-3 bg-black"></div>
+        <div class="position-fixed top-0 start-0 px-3 d-none d-md-block col-md-3">
+            <div>
+                <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="" />
+            </div>
+
+            <div class="d-flex flex-column text-white">
+                <div class="ContainerIcon mt-3 my-2">
+                    <i class="fa-solid fa-house text-white me-2"></i>
+                    <h3 class="titleLeft">Home</h3>
+                </div>
+                <div class="ContainerIcon my-2">
+                    <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
+                    <h3 class="titleLeft">Cerca</h3>
+                </div>
+                <div class="ContainerIcon my-2">
+                    <i class="fa-solid fa-book-open me-2"></i>
+                    <h3 class="titleLeft">La tua libreria</h3>
+                </div>
+                <div class="ContainerIcon my-2">
+                    <i class="fa-solid fa-square-plus text-white me-2"></i>
+                    <h3 class="titleLeft">Crea la tua playlist</h3>
+                </div>
+                <div class="ContainerIcon my-2">
+                    <i class="fa-solid fa-heart text-white me-2"></i>
+                    <h3 class="titleLeft me-1">Brani che ti piacicono</h3>
+                </div>
+                <div class="ContainerIcon my-2">
+                    <i class="fa-solid fa-bookmark text-white me-2"></i>
+                    <h3 class="titleLeft">I tuoi episodi</h3>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="playlist">
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+                <p>nome playlist</p>
+            </div>
+        </div>
+
+
+
+        <div class="centerPartSearch col-md-7 col-12">
+            <div class="searchTitle">
+                <p>Cerca</p>
+            </div>
+
+
+            <div class="searchBar d-flex">
+                <i class="fa-solid fa-magnifying-glass m-1"></i>
+                <input type="search" Placeholder="Cosa vuoi ascoltare?" class="inputSearch">
+            </div>
+
+
+            <div class=" searchTitle d-flex justify-content-center">
+                <p>Sfoglia Tutto</p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <footer>
+            <div class="music-player row d-none d-md-flex">
+                <div class="song-bar col-3">
+                    <div class="song-infos">
+                        <div class="image">
+                            <img src="https://place.dog/300/300" alt="" />
+                        </div>
+                        <div class="song-description">
+                            <p class="title">Titolo Canzone</p>
+                            <p class="artist">Artista</p>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-compress"></i>
+                    </div>
+                </div>
+
+                <div class="col-7 progress-controller">
+                    <div class="control-buttons">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="play-pause fas fa-play"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+
+                    <div class="progress-container">
+                        <span>tempo inizio</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span>tempo fine</span>
+                    </div>
+                </div>
+
+                <div class="col-2 other-features">
+                    <i class="fas fa-list-ul"></i>
+                    <i class="fas fa-desktop"></i>
+                    <div class="volume-bar">
+                        <i class="fas fa-volume-down"></i>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footerMobile g-0 d-flex flex-column justify-content-center">
+            <div class="player d-flex justify-content-end align-items-baseline">
+                <p class="w-40 d-md-none">testo Che gira</p>
+                <i class="fa-solid fa-display m-3"></i>
+                <i class="fa-regular fa-heart m-3"></i>
+                <i class="fa-solid fa-play m-3"></i>
+            </div>
+            <div class="footerBar d-flex d-md-none justify-content-around w-100">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <p>home</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Cerca</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <p>libreria</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scriptHome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
