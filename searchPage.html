@@ -74,9 +74,10 @@
 
 
             <div class="searchBar d-flex">
-                <i class="fa-solid fa-magnifying-glass m-1" onclick="asyncWait()"></i>
+                <i class="fa-solid fa-magnifying-glass m-1" onclick="asyncWait()" id="myInput"></i>
 
-                <input type="search" Placeholder="Cosa vuoi ascoltare?" class="inputSearch" id="inputSearch">
+                <input type="search" Placeholder="Cosa vuoi ascoltare?" onkeypress="inputKeyPress(event)"
+                    class="inputSearch" id="inputSearch">
             </div>
 
 

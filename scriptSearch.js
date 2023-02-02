@@ -5,16 +5,17 @@ asyncWait = async function () {
       `https://striveschool-api.herokuapp.com/api/deezer/search?q=${inputValue}`
     );
     if (res.ok) {
-      let data = await res.json();
-      console.log(data);
-      const array = Object.values(data);
-      const jarray = Object.values(array[0]);
+      try {
+        let data = await res.json();
 
-      let div = document.getElementById("cardContainerSearch");
-      div.innerHTML = ``;
-      for (let i = 0; i < 10; i++) {
-        let element = jarray[i];
-        div.innerHTML += `         
+        const array = Object.values(data);
+        const jarray = Object.values(array[0]);
+
+        let div = document.getElementById("cardContainerSearch");
+        div.innerHTML = ``;
+        for (let i = 0; i < 10; i++) {
+          let element = jarray[i];
+          div.innerHTML += `         
                         <div class="searchCard card d-flex align-items-center m-1" style="max-width: 15rem;">
                         <img src="${element.album.cover_xl}" class="searchImgCard card-img-top" alt="">
                         <div class="card-body">
@@ -26,15 +27,27 @@ asyncWait = async function () {
                         </div>
                         </div>                        
                         `;
+        }
+      } catch (err) {
+        let div = document.getElementById("cardContainerSearch");
+        div.innerHTML = `<div> RICERCA FALLITA, RIPROVA PIU TARDI :( </div>`;
+        console.log(err);
       }
-
-      // funzione di prova non fa nulla!
+    } else {
+      throw new Error("input vuoto :(");
     }
   } catch (err) {
+    let div = document.getElementById("cardContainerSearch");
+    div.innerHTML = `<div> RICERCA FALLITA, RIPROVA PIU TARDI :( </div>`;
     console.log(err);
   }
 };
 
+function inputKeyPress(e) {
+  if (e.key === "Enter") {
+    this.asyncWait();
+  }
+}
 // window.onload = () => {
 //   asyncWait("pink floyd", "buonasera");
 // };
