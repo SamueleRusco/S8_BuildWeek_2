@@ -83,9 +83,11 @@ h3 {
 
 .contenuto {
   background: rgb(33, 33, 33);
-  background: linear-gradient(180deg,
-      rgba(33, 33, 33, 1) 0%,
-      rgba(18, 18, 18, 1) 100%);
+  background: linear-gradient(
+    190deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
 }
 
 h6 {

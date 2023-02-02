@@ -29,3 +29,38 @@
   font-size: 12px;
   color: #e4e4e4;
 }
+
+.searchCard {
+  background: rgb(68, 68, 68);
+  background: linear-gradient(
+    0deg,
+    rgba(68, 68, 68, 1) 37%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.textCardSearch {
+  font-size: 20px;
+  color: #979797;
+}
+.textCardSearch2 {
+  font-size: 15px;
+  color: #979797;
+}
+
+.searchImgCard {
+  width: 90%;
+  max-width: 150px;
+  max-height: 200px;
+  margin: 10px;
+
+  border-radius: 5px;
+}
+.card-title {
+  font-size: 30px;
+}
+.cardContainerImg {
+  padding: 10px;
+}
