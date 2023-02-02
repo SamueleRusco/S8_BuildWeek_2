@@ -13,7 +13,7 @@ const asyncWait = async function (url, where) {
           div.innerHTML += `
 
 
-        <div class="col d-flex my-2">
+        <div class="col d-flex my-2 mycardpiacecontainer">
         <div class="card mycardpiace">
           <img
             src="${jarray[i].album.cover_xl}"
@@ -36,7 +36,7 @@ const asyncWait = async function (url, where) {
     
     
           <div class="col">
-          <div class="card mycardsmall mb-3">
+          <div class="card mycardsmall mb-3 ">
            
               
               
@@ -44,11 +44,11 @@ const asyncWait = async function (url, where) {
                 <img
                   src=" ${jarray[i].album.cover_xl}"
                   class="rounded-start img-fluid "
-                  style="width:80px; height:80px;"
+                  style="width:50px; height:50px;"
 
                   alt="..."
                 />
-                  <h6 class="card-title fs-6 ms-2 fs-md-3 mb-0 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
+                  <h6 class="card-title h6home fw-bold text-white ms-2  mb-0 artistClick" role='button' id="${jarray[i].artist.id}">${jarray[i].artist.name}</h6><i id="playhover" class="fa-sharp fa-solid fa-circle-play "></i>
                 </div>
             
           </div>
@@ -65,7 +65,7 @@ const asyncWait = async function (url, where) {
               alt="..."
             />
             </div>
-            <div class="col-3 mycardText text-white mb-4">
+            <div class="col-7 mycardText text-white mb-4">
             <p class="card-text titleLeft mt-2">Album</p>
             <h6 class="card-title pBold fs-1 mt-4 mb-3 " role='button'>${jarray[0].title}</h6>
             <p class="card-text mb-3 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[0].artist.name}</p>
@@ -92,7 +92,7 @@ const asyncWait = async function (url, where) {
       } else if (where === "containerMobile") {
         for (let i = 0; i < 6; i++) {
           div.innerHTML += `
-          <div class="card mycard d-block d-md-none my-3">
+          <div class="card mycard d-block d-md-none my-3 p-2 rounded">
           <div class="d-flex flex-row">
             <div class="col-6 col-md-3 h-100">
               <img
@@ -102,8 +102,8 @@ const asyncWait = async function (url, where) {
                 alt="..."
               />
             </div>
-            <div class="col-6 mycardText mt-2">
-              <h6 class="card-text mt-2 artistClick" id="${jarray[0].artist.id}" role='button'>${jarray[0].artist.name}</h6>
+            <div class="col-6 mycardText  mt-2">
+              <h6 class="card-text mt-2 textartist artistClick" id="${jarray[0].artist.id}" role='button'>${jarray[0].artist.name}</h6>
               
               <p class="card-text fs-5 mb-3 fst-italic fs-6">${jarray[0].album.title}</p>
               <p class="card-text fs-5 mb-3 fw-bold fs-2">${jarray[0].title}</p>
@@ -113,7 +113,7 @@ const asyncWait = async function (url, where) {
           <div class="d-flex justify-content-between align-items-b mx-3 my-2">
             <div class="d-flex">
               <i class="fa-solid fa-heart text-white me-4"></i>
-              <i class="fa-solid fa-bookmark text-white me-2"></i>
+              <i class="fa-solid fa-ellipsis-vertical text-white "></i>
             </div>
             <div class="d-flex">
               <i class="fa-solid fa-heart text-white me-2 ms-4"></i>
@@ -152,6 +152,6 @@ const asyncWait = async function (url, where) {
 window.onload = () => {
   asyncWait("hello", "cardDiv");
   asyncWait("pink floyd", "buonasera");
-  asyncWait("rem", "first");
+  asyncWait("ciao", "first");
   asyncWait("ac/dc", "containerMobile");
 };

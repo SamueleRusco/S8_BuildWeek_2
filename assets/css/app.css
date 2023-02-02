@@ -179,6 +179,10 @@ p {
   font-weight: 600important;
 }
 
+.altro {
+  font-size: 1.2vw !important;
+}
+
 h5 {
   font-weight: 600;
 }
@@ -196,7 +200,7 @@ h6 {
 
 .centerPart {
   background: rgb(33, 33, 33);
-  background: linear-gradient(190deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
+  background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
 }
 
 .logo {
@@ -267,7 +271,8 @@ h6 {
 }
 
 .mycardsmall {
-  background-color: #444444;
+  background-color: #2D2D2D !important;
+  border-radius: 8px !important;
 }
 
 .background {
@@ -275,7 +280,8 @@ h6 {
 }
 
 .mycardpiace {
-  background-color: #232323;
+  background-color: #232323 !important;
+  border-radius: 8px !important;
 }
 
 .mycardAmico img {
@@ -284,11 +290,13 @@ h6 {
 }
 
 .mycardsmall :hover {
-  background-color: #232323;
+  background-color: rgb(59, 59, 59);
+  border-radius: 10px !important;
 }
 
 .mycardpiacecontainer :hover {
-  background-color: #444444;
+  background-color: #3c3c3c !important;
+  border-radius: 8px !important;
 }
 
 #playhover {
@@ -299,6 +307,24 @@ h6 {
 
 #playhover:hover {
   opacity: 1;
+}
+
+.h6home {
+  color: rgb(123, 123, 123);
+  font-weight: 600 !important;
+  font-size: 0.8em !important;
+}
+
+.textartist {
+  font-size: 0.7em !important;
+}
+
+#containerMobile {
+  margin-bottom: 100px;
+}
+
+fa-ellipsis-vertical {
+  color: white;
 }
 
 footer {
@@ -607,16 +633,18 @@ section {
 }
 .card-body h2 {
   font-size: 3vw !important;
+  font-weight: 900 !important;
 }
 
 @media screen and (max-width: 768px) {
   .card-body h2 {
-    font-size: 6vw !important;
-    font-weight: 400 !important;
+    font-size: 9vw !important;
+    font-weight: 600 !important;
   }
 }
 .card-body p {
   font-size: 0.7vw !important;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -625,6 +653,15 @@ section {
     font-weight: 400 !important;
   }
 }
+.pgrigio {
+  color: #303030;
+}
+
+#albumImg {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=app.css.map */

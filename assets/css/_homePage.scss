@@ -10,6 +10,9 @@ p {
   margin-bottom: 2px;
   font-weight: 600important;
 }
+.altro{
+  font-size: 1.2vw !important;
+}
 
 h5 {
   font-weight: 600;
@@ -25,12 +28,9 @@ h6 {
   font-weight: 400;
 }
 .centerPart {
-  background: rgb(33, 33, 33);
-  background: linear-gradient(
-    190deg,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(18, 18, 18, 1) 100%
-  );
+  background: rgb(33,33,33);
+  background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
+  ;
 }
 .logo {
   height: 50px;
@@ -97,7 +97,8 @@ h6 {
   width: 100px;
 }
 .mycardsmall {
-  background-color: #444444;
+  background-color:#2D2D2D !important;
+  border-radius: 8px !important;
 }
 
 .background {
@@ -105,7 +106,8 @@ h6 {
 }
 
 .mycardpiace {
-  background-color: #232323;
+  background-color: #232323  !important;
+  border-radius: 8px !important;
 }
 
 .mycardAmico {
@@ -116,10 +118,13 @@ h6 {
 }
 
 .mycardsmall :hover {
-  background-color: #232323;
+  background-color: rgb(59, 59, 59);
+  border-radius: 10px !important;
+
 }
 .mycardpiacecontainer :hover {
-  background-color: #444444;
+  background-color: #3c3c3c !important;
+  border-radius: 8px !important;
 }
 #playhover {
   font-size: 40px;
@@ -130,3 +135,18 @@ h6 {
 #playhover:hover {
   opacity: 1;
 }
+
+.h6home {
+  color: rgb(123, 123, 123);
+  font-weight: 600 !important;
+  font-size: 0.8em !important;}
+
+  .textartist{
+font-size: 0.7em !important;
+  }
+  #containerMobile{
+    margin-bottom: 100px;
+  }
+  fa-ellipsis-vertical{
+    color:white
+  }
