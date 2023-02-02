@@ -5,8 +5,14 @@ const asyncWait = async function (url, where) {
     );
     if (res.ok) {
       let data = await res.json();
+
       const array = Object.values(data);
       const jarray = Object.values(array[0]);
+
+      if (where === "cardDiv") {
+        var jarray2 = jarray;
+      }
+
       let div = document.getElementById(where);
       if (where === "cardDiv") {
         for (let i = 0; i < 10; i++) {
@@ -17,7 +23,7 @@ const asyncWait = async function (url, where) {
         <div class="card mycardpiace">
           <img
             src="${jarray[i].album.cover_xl}"
-            class="card-img-top p-2 rounded-4"
+            class="card-img-top p-2 rounded-4 playerClick" id="${i}"
             alt="..."
           />
           <div class="card-body">
@@ -63,7 +69,7 @@ const asyncWait = async function (url, where) {
             <img
               style="width: 200px"
               src="${jarray[0].album.cover_xl}"
-              class="card-img-top mx-3"
+              class="card-img-top mx-3 " id=""
               alt="..."
             />
             </div>
@@ -99,9 +105,9 @@ const asyncWait = async function (url, where) {
           <div class="d-flex flex-row">
             <div class="col-6 col-md-3 h-100">
               <img
-                class="background h-100 w-100 p-3"
-                src="${jarray[0].album.cover_xl}"
-                class="card-img-top"
+                class="background h-100 w-100 p-3" id=${i}
+                src="${jarray[0].album.cover_xl}" 
+                class="card-img-top "
                 alt="..."
               />
             </div>
@@ -240,6 +246,69 @@ const asyncWait = async function (url, where) {
 
       artist.forEach((artistN) => {
         artistN.addEventListener("click", clicked);
+      });
+
+      function songPlayer(event) {
+        let i = event.target.id;
+        let footer = document.getElementById("footerPlay");
+        footer.innerHTML = `<div class="music-player row d-none d-md-flex">
+<audio class="d-none" id="myAudio">
+  <source src="${jarray2[i].preview}" type="audio/mpeg" />
+  Your browser does not support the audio tag.
+</audio>
+
+<div class="song-bar col-3">
+  <div class="song-infos">
+    <div class="image">
+      <img src="${jarray2[i].album.cover_xl}" alt="" />
+    </div>
+    <div class="song-description">
+      <p class="title">${jarray2[i].title}</p>
+      <p class="artist">${jarray2[i].artist.name}</p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <i class="far fa-heart"></i>
+    <i class="fas fa-compress"></i>
+  </div>
+</div>
+
+<div class="col-7 progress-controller">
+  <div class="control-buttons">
+    <i class="fas fa-random"></i>
+    <i class="fas fa-step-backward"></i>
+    <i class="play-pause fas fa-play" id="playStart"></i>
+    <i class="fas fa-step-forward"></i>
+    <i class="fas fa-undo-alt"></i>
+  </div>
+
+  <div class="progress-container">
+    <span>tempo inizio</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <span>tempo fine</span>
+  </div>
+</div>
+
+<div class="col-2 other-features">
+  <i class="fas fa-list-ul"></i>
+  <i class="fas fa-desktop"></i>
+  <div class="volume-bar">
+    <i class="fas fa-volume-down"></i>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</div>
+</div>`;
+      }
+
+      let songs = document.querySelectorAll(".playerClick");
+
+      songs.forEach((element) => {
+        element.addEventListener("click", songPlayer);
       });
     }
   } catch (err) {

@@ -4,7 +4,12 @@ const asyncWait = async function (url, where) {
       ` https://striveschool-api.herokuapp.com/api/deezer/album/${url}`
     );
     if (res.ok) {
-      function truncateString(str, num) {   if (str.length <= num) {     return str   }   return str.slice(0, num) + '...' }
+      function truncateString(str, num) {
+        if (str.length <= num) {
+          return str;
+        }
+        return str.slice(0, num) + "...";
+      }
       let data = await res.json();
       const array = Object.values(data);
 
@@ -55,7 +60,7 @@ const asyncWait = async function (url, where) {
 </div>`;
 
         for (let i = 0; i < jarray2.length; i++) {
-          let titoloTroncato= truncateString(jarray2[i].title, 20)
+          let titoloTroncato = truncateString(jarray2[i].title, 20);
 
           div.innerHTML += `      <div class="container d-flex position-relative my-3 col-12 px-3">
          <div class="d-flex align-items-center justify-content-center ">
@@ -63,13 +68,15 @@ const asyncWait = async function (url, where) {
           <p class="text-white me-3">${i + 1}</p>
         </div>
         <div>
-          <h3 class="fw-semibold"> ${titoloTroncato} </h3>
+          <h3 class="fw-semibold playerClick" id="${i}"> ${titoloTroncato} </h3>
           <p class="numAscolti">${jarray2[i].artist.name}</p>
         </div>
       </div>
       <div>
     
-        <p class="numAscolti position-absolute end-50 d-none d-md-flex ">${jarray2[i].rank}</p>
+        <p class="numAscolti position-absolute end-50 d-none d-md-flex ">${
+          jarray2[i].rank
+        }</p>
       
 
       <p class="numAscolti ms-5 position-absolute end-0 me-3 d-none d-md-flex">${
@@ -83,6 +90,69 @@ const asyncWait = async function (url, where) {
        `;
         }
       }
+
+      function songPlayer(event) {
+        let i = event.target.id;
+        let footer = document.getElementById("footerPlay");
+        footer.innerHTML = `<div class="music-player row d-none d-md-flex">
+<audio class="d-none" id="myAudio">
+  <source src="${jarray2[i].preview}" type="audio/mpeg" />
+  Your browser does not support the audio tag.
+</audio>
+
+<div class="song-bar col-3">
+  <div class="song-infos">
+    <div class="image">
+      <img src="${jarray2[i].album.cover_xl}" alt="" />
+    </div>
+    <div class="song-description">
+      <p class="title">${jarray2[i].title}</p>
+      <p class="artist">${jarray2[i].artist.name}</p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <i class="far fa-heart"></i>
+    <i class="fas fa-compress"></i>
+  </div>
+</div>
+
+<div class="col-7 progress-controller">
+  <div class="control-buttons">
+    <i class="fas fa-random"></i>
+    <i class="fas fa-step-backward"></i>
+    <i class="play-pause fas fa-play" id="playStart"></i>
+    <i class="fas fa-step-forward"></i>
+    <i class="fas fa-undo-alt"></i>
+  </div>
+
+  <div class="progress-container">
+    <span>tempo inizio</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <span>tempo fine</span>
+  </div>
+</div>
+
+<div class="col-2 other-features">
+  <i class="fas fa-list-ul"></i>
+  <i class="fas fa-desktop"></i>
+  <div class="volume-bar">
+    <i class="fas fa-volume-down"></i>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</div>
+</div>`;
+      }
+
+      let songs = document.querySelectorAll(".playerClick");
+
+      songs.forEach((element) => {
+        element.addEventListener("click", songPlayer);
+      });
     }
   } catch (err) {
     console.log(err);
@@ -94,8 +164,6 @@ window.onload = () => {
   let search = params.get("search");
   asyncWait(search, "albumDiv");
 };
-
-
 
 /*const getAlbum = async () => {
   try {

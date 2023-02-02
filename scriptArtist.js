@@ -4,6 +4,13 @@ const asyncWait = async function (url, where) {
       `https://striveschool-api.herokuapp.com/api/deezer/artist/${url}`
     );
     if (res.ok) {
+      function truncateString(str, num) {
+        if (str.length <= num) {
+          return str;
+        }
+        return str.slice(0, num) + "...";
+      }
+
       let data = await res.json();
       const array = Object.values(data);
       const jarray = Object.values(array[0]);
@@ -35,6 +42,7 @@ const asyncWait = async function (url, where) {
 
         for (let i = 0; i < jarray2.length; i++) {
           divSongs = document.createElement("div");
+          let titoloTroncato = truncateString(jarray2[i].title, 20);
 
           div2.innerHTML += `   
           <div class="d-flex row my-1 ">
@@ -48,7 +56,7 @@ const asyncWait = async function (url, where) {
       />
       
       <div class="d-flex flex-column flex-md-row ">
-        <h3 class="mt-2">${jarray2[i].title}</h3>
+        <h3 class="mt-2 playerClick" id="${i}">${titoloTroncato}</h3>
        
         <div class="d-flex d-block d-md-none end-0">
         <div class="numAscolti fw-semibold  ">
@@ -90,6 +98,76 @@ const asyncWait = async function (url, where) {
       </div>`;
         songLike.append(songlikeDiv);
       }
+
+      function songPlayer(event) {
+        let i = event.target.id;
+        let footer = document.getElementById("footerPlay");
+        footer.innerHTML = `<div class="music-player row d-none d-md-flex">
+<audio class="d-none" id="myAudio">
+  <source src="${jarray2[i].preview}" type="audio/mpeg" />
+  Your browser does not support the audio tag.
+</audio>
+
+<div class="song-bar col-3">
+  <div class="song-infos">
+    <div class="image">
+      <img src="${jarray2[i].album.cover_xl}" alt="" />
+    </div>
+    <div class="song-description">
+      <p class="title">${jarray2[i].title}</p>
+      <p class="artist">${jarray2[i].artist.name}</p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <i class="far fa-heart"></i>
+    <i class="fas fa-compress"></i>
+  </div>
+</div>
+
+<div class="col-7 progress-controller">
+  <div class="control-buttons">
+    <i class="fas fa-random"></i>
+    <i class="fas fa-step-backward"></i>
+    <i class="play-pause fas fa-play" id="playStart"></i>
+    <i class="fas fa-step-forward"></i>
+    <i class="fas fa-undo-alt"></i>
+  </div>
+
+  <div class="progress-container">
+    <span>tempo inizio</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <span>tempo fine</span>
+  </div>
+</div>
+
+<div class="col-2 other-features">
+  <i class="fas fa-list-ul"></i>
+  <i class="fas fa-desktop"></i>
+  <div class="volume-bar">
+    <i class="fas fa-volume-down"></i>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</div>
+</div>`;
+      }
+
+      let songs = document.querySelectorAll(".playerClick");
+
+      songs.forEach((element) => {
+        element.addEventListener("click", songPlayer);
+      });
+      let play = document.getElementById("playStart");
+
+      function playAudio() {
+        let audio = document.getElementById("myAudio");
+        audio.play();
+      }
+      play.addEventListener("click", playAudio);
     }
   } catch (err) {
     console.log(err);
