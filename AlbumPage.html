@@ -1,129 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Album Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/app.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body style="width: 100%">
     <main class="row g-0">
-
-        <div class="px-3 d-none d-md-block col-md-3 bg-black"></div>
-
-
-        <div class="position-fixed top-0 start-0 px-3 d-none d-md-block col-md-3">
-            <div>
-                <img class="logo" src="./assets/img/Spotify_Logo_RGB_White.png" alt="" />
-            </div>
-
-            <div class="d-flex flex-column text-white">
-                <div class="ContainerIcon mt-3 my-2">
-                    <i class="fa-solid fa-house text-white me-2"></i>
-                    <h3 class="titleLeft">Home</h3>
-                </div>
-                <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
-                    <h3 class="titleLeft">Cerca</h3>
-                </div>
-                <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-book-open me-2"></i>
-                    <h3 class="titleLeft">La tua libreria</h3>
-                </div>
-                <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-square-plus text-white me-2"></i>
-                    <h3 class="titleLeft">Crea la tua playlist</h3>
-                </div>
-                <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-heart text-white me-2"></i>
-                    <h3 class="titleLeft me-1">Brani che ti piacicono</h3>
-                </div>
-                <div class="ContainerIcon my-2">
-                    <i class="fa-solid fa-bookmark text-white me-2"></i>
-                    <h3 class="titleLeft">I tuoi episodi</h3>
-                </div>
-            </div>
-
-            <hr />
-
-            <div class="playlist">
-                <p>nome playlist</p>
-                <p>nome playlist</p>
-                <p>nome playlist</p>
-                <p>nome playlist</p>
-                <p>nome playlist</p>
-            </div>
+      <!-- inzio barra sinistra-->
+      <div class="px-3 d-none d-md-block col-md-3 bg-black"></div>
+      <div class="position-fixed top-0 start-0 px-3 d-none d-md-block col-md-3">
+        <div>
+          <i class="fa-solid fa-ellipsis text-white"></i>
         </div>
 
+        <div class="d-flex flex-column text-white">
+          <div class="ContainerIcon mt-3 my-2">
+            <svg
+              class="text-white me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-house-door-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+              />
+            </svg>
 
+            <h3 class="titleLeft">Home</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <svg
+              class="text-white me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
 
-        <section class="col-12 col-md-7 mainbar  p-0">
-           <div class=" header" > 
-            <div class="d-flex my-3 mx-3 d-none d-md-block">
-                    <i class="fa-solid fa-arrow-left mx-2"></i><i class="fa-solid fa-arrow-right mx-2 "></i>
-                  </div>
-
-            <div class=" d-flex flex-md-start justify-content-center justify-content-md-start">
-
-               
-
-                <div class="card mb-3 mx-md-4 mt-5" >
-                    <div class="row g-0 justify-content-center pt-4 py-md-0">
-                        <div class="col-9 col-md-4 containerAlbum">
-                            <img src="http://placekitten.com/200" class=" h-100 w-100 " id="albumImg" alt="immagine canzone">
-                        </div>
-                        <div class="row  col-md-8 justify-content-center ">
-                            <div class="card-body p-0 d-flex flex-column justify-content-end ms-md-3">
-                                <p class="d-none d-md-block  " > Album</p>
-                                <h2 class="text-white " id="albumTitle">TITOLO ALBUM</h2>
-
-<div class="class=card-text  fs-3 fw-normal d-flex align-items-center"> 
-    <img class="rounded-circle artistlikeImg me-2" src="http://placekitten.com/300" id="artistImg"
-    alt="immagine artisti">
-    <p> nome band</p>
-    
-</div>
-
-    <!-- <div class="d-flex"> 
-                                <p class="card-text  fs-3 fw-normal">
-                                    <small class="text-white ">
-                                    <img class="rounded-circle artistlikeImg me-2" src="http://placekitten.com/300" id="artistImg"
-                                            alt="immagine artisti">
-                                            <span  id="artistName">qui andrà il nome
-                                            dell'artista</span>
-                                            <div class="d-none d-md-flex"> <span> • </span><span id="albumLenght">
-                                            brani</span><span> • </span>
-                                        <span></span>53.59</small>
-                                    </div> </p></div>
-
-                                <p class="d-block d-md-none my-2 pgrigio "> Album 2019</p>
-
-                            </div> -->  
-                        </div>
-                    </div>
-                </div>
-</div>
-
-
-
-
+            <h3 class="titleLeft">Cerca</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <svg
+              class="text-white me-2 libreria"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bookshelf"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5 0a.5.5 0 0 1 .5.5V2h10V.5a.5.5 0 0 1 1 0v15a.5.5 0 0 1-1 0V15H3v.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zM3 14h10v-3H3v3zm0-4h10V7H3v3zm0-4h10V3H3v3z"
+              />
+            </svg>
+            <h3 class="titleLeft">La tua libreria</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <i class="fa-solid fa-square-plus text-white me-2"></i>
+            <h3 class="titleLeft">Crea la tua playlist</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <div
+              class="violabg d-flex justify-content-center align-items-center me-2"
+            >
+              <svg
+                class="text-white iconaLateral"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-suit-heart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                />
+              </svg>
+            </div>
+            <h3 class="titleLeft me-1">Brani che ti piacicono</h3>
+          </div>
+          <div class="ContainerIcon my-2">
+            <div
+              class="verdebg d-flex justify-content-center align-items-center me-2"
+            >
+              <svg
+                class="text-white iconaLateral"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bookmark-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+                />
+              </svg>
             </div>
 
-            <div class="songBar">
-                <nav class="nav">
-                    <a class="nav-link active" aria-current="page" href="#" id="play"><i
-                            class="fa-solid fa-circle-play"></i></a>
-                    <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></i>
-                    </a>
-                    <a class="nav-link" href="#"><i class="fa-regular fa-circle-down"></i></a>
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i
-                            class="fa-solid fa-ellipsis"></i></a>
-                </nav>
-              <!--   <div>
+            <h3 class="titleLeft">I tuoi episodi</h3>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="playlist">
+          <p>nome playlist ⌚</p>
+          <p>nome playlist</p>
+          <p>nome playlist✋</p>
+          <p>nome playlist</p>
+          <p>nome playlist✋</p>
+          <p>nome playlist✨</p>
+          <p>nome playlist</p>
+          <p>nome playlist🏸</p>
+          <p>nome playlist</p>
+          <p>nome playlist</p>
+          <p>nome playlist🐚</p>
+        </div>
+      </div>
+      <!-- fine barra sinistra barra sinistra-->
+
+      <section class="col-12 col-md-7 mainbar p-0">
+        <div class="header">
+          <div class="d-flex my-3 mx-3 d-none d-md-block">
+            <i class="fa-solid fa-arrow-left mx-2"></i
+            ><i class="fa-solid fa-arrow-right mx-2"></i>
+          </div>
+
+          <div
+            class="d-flex flex-md-start justify-content-center justify-content-md-start"
+            id="albumFirst"
+          ></div>
+
+          <div class="songBar">
+            <nav class="nav">
+              <a class="nav-link active" aria-current="page" href="#" id="play"
+                ><i class="fa-solid fa-circle-play"></i
+              ></a>
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-heart"></i>
+              </a>
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-circle-down"></i
+              ></a>
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></a>
+            </nav>
+            <!--   <div>
 
                    
                     <table class="table">
@@ -155,179 +201,175 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>--> 
+                </div>-->
 
-
-                <div class="d-flex justify-content-between"> 
-                    <div class="d-flex"> 
-                        <p class="numAscolti ms-4 mb-0"> #</p>
-                        <p class="numAscolti mb-0"> Titolo</p>
-                    </div>
-                    <p class="numAscolti mb-0"> Riproduzioni</p> 
-                    <i class="fa-solid fa-clock numAscolti me-3 mb-0"></i>
-                
-                </div>
-<hr>
-<!-- inzio riga del brano-->
-                <div class="container d-flex justify-content-between"> 
-                    <div class="d-flex align-items-center justify-content-center">
-                    <div> 
-                      <p class="text-white me-3">  1</p> 
-                    </div>
-                 <div> 
-    <h3  class="fw-semibold  "
-    > titolo</h3>
-    <p class=" numAscolti ">sottotitolo</p>
-</div>
-</div>
-<div> 
-    <p class="numAscolti">  67890</p>
-   
-</div>
-
-<div> <p class="numAscolti"> 3.34</p>
- </div>
-                </div>
-
+            <div class="d-flex d-none d-md-flex position-relative col-12">
+              <div class="d-flex">
+                <p class="numAscolti ms-4 mb-0">#</p>
+                <p class="numAscolti mb-0">Titolo</p>
+              </div>
+              <p class="numAscolti position-absolute end-50 mb-0">Rank</p>
+              <i
+                class="fa-solid fa-clock numAscolti me-3 mb-0 position-absolute end-0"
+              ></i>
             </div>
+            <hr />
+            <div class="d-flex flex-column row col-12 m-0" id="albumDiv"></div>
+          </div>
+        </div>
+      </section>
+      <!-- inizio laterale destro -->
+      <div class="px-3 d-none d-md-block col-md-2 bg-black"></div>
+      <div class="position-fixed top-0 end-0 px-3 d-none d-md-block col-md-2">
+        <div
+          class="d-flex justify-content-between mt-4 align-items-center mb-2"
+        >
+          <h3 class="titleLeft">I tuoi amici</h3>
 
-        </section>
-
-
-        <div class="lateralPart px-3 .d-sm-none col-lg-2">
-
-            <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
-                <h3 class="titleLeft "> I tuoi amici </h3>
-
-                <div mt-4>
-                    <i class="fa-solid fa-user-plus text-white"></i>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-
+          <div mt-4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V10.5a.5.5 0 0 0-1 0v2.793l-.646-.647a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+              />
+              <path
+                d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="https://pyxis.nymag.com/v1/imgs/55c/50d/92b3f892b6d460f9f0fcd90b30a4f57d22-10-momo.rsquare.w330.jpg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex justify-content-between">
+                <p class="titleLeft">Mauro</p>
+                <p class="fw-normal">3 min ago</p>
+              </div>
+              <p class="titleLeft">Ha ascoltato Beatles</p>
             </div>
-            <div>
-                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
-                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-                    <div class="card-body p-0">
-                        <p class="titleLeft">Nome dell'amico
-                            content.</p>
-                        <p class="titleLeft"> Ha ascoltato questa
-
-                        </p>
-                        <p class="titleLeft"> al''ora</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <div class="card mycardAmico bg-black  d-flex flex-row flex-nowrap">
-                    <img src="./assets/img/amici/image09.jpeg" class="m-2 card-img-top rounded-circle" alt="...">
-                    <div class="card-body p-0">
-                        <p class="titleLeft">Nome dell'amico
-                            content.</p>
-                        <p class="titleLeft"> Ha ascoltato questa
-
-                        </p>
-                        <p class="titleLeft"> al''ora</p>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
 
+        <div class="mt-4">
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="https://img-9gag-fun.9cache.com/photo/anQbj0o_460s.jpg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex justify-content-between">
+                <p class="titles">Piero</p>
+                <p class="fw-normal">14 min fa</p>
+              </div>
+              <p class="titleLeft">Ha ascoltato PesteNoire</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- fine laterale destro -->
 
-
-<!-- 
-        <footer>
-
-
-            <div class="music-player row d-none d-md-flex">
-
-
-                <div class="song-bar col-3">
-                    <div class="song-infos">
-                        <div class="image">
-                            <img src="https://place.dog/300/300" alt="" />
-                        </div>
-                        <div class="song-description">
-                            <p class="title">
-                                Titolo Canzone
-                            </p>
-                            <p class="artist">Artista</p>
-                        </div>
-                    </div>
-
-                    <div class="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-compress"></i>
-                    </div>
-                </div>
-
-
-                <div class="col-7 progress-controller">
-                    <div class="control-buttons">
-                        <i class="fas fa-random"></i>
-                        <i class="fas fa-step-backward"></i>
-                        <i class="play-pause fas fa-play"></i>
-                        <i class="fas fa-step-forward"></i>
-                        <i class="fas fa-undo-alt"></i>
-                    </div>
-
-                    <div class="progress-container">
-                        <span>tempo inizio</span>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <span>tempo fine</span>
-                    </div>
-                </div>
-
-
-                <div class="col-2 other-features">
-                    <i class="fas fa-list-ul"></i>
-                    <i class="fas fa-desktop"></i>
-                    <div class="volume-bar">
-                        <i class="fas fa-volume-down"></i>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
-        <div class="footerMobile g-0 d-flex  flex-column justify-content-center">
-            <div class=" player d-flex justify-content-end align-items-baseline">
-                <p class="w-40 d-md-none">testo Che gira</p>
-                <i class="fa-solid fa-display m-3"></i>
-                <i class="fa-regular fa-heart m-3"></i>
-                <i class="fa-solid fa-play m-3"></i>
-
-            </div>
-            <div class="footerBar d-flex d-md-none justify-content-around w-100 ">
-                <div><i class="fa-solid fa-house"></i>
-                    <p>home</p>
-                </div>
-                <div><i class="fa-solid fa-magnifying-glass"></i>
-                    <p>Cerca</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-book"></i>
-                    <p>libreria</p>
-                </div>
+      <footer>
+        <div class="music-player row d-none d-md-flex">
+          <div class="song-bar col-3">
+            <div class="song-infos">
+              <div class="image">
+                <img src="https://place.dog/300/300" alt="" />
+              </div>
+              <div class="song-description">
+                <p class="title">Titolo Canzone</p>
+                <p class="artist">Artista</p>
+              </div>
             </div>
 
+            <div class="icons">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-compress"></i>
+            </div>
+          </div>
 
+          <div class="col-7 progress-controller">
+            <div class="control-buttons">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="play-pause fas fa-play"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-undo-alt"></i>
+            </div>
 
+            <div class="progress-container">
+              <span>tempo inizio</span>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <span>tempo fine</span>
+            </div>
+          </div>
 
+          <div class="col-2 other-features">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <div class="volume-bar">
+              <i class="fas fa-volume-down"></i>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </footer>
+      <div class="footerMobile g-0 d-flex flex-column justify-content-center">
+        <div class="player d-flex justify-content-end align-items-baseline">
+          <p class="w-40 d-md-none">testo Che gira</p>
+          <i class="fa-solid fa-display m-3"></i>
+          <i class="fa-regular fa-heart m-3"></i>
+          <i class="fa-solid fa-play m-3"></i>
+        </div>
+        <div class="footerBar d-flex d-md-none justify-content-around w-100">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <p>home</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Cerca</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-book"></i>
+            <p>libreria</p>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scriptAlbum.js"></script>
+  </body>
 </html>

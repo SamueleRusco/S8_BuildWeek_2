@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  width: 100%;
+  width: 100% !important;
   color: white;
   margin: 0;
 }
@@ -147,6 +147,36 @@ font-size: 0.7em !important;
   #containerMobile{
     margin-bottom: 100px;
   }
-  fa-ellipsis-vertical{
+  .fa-ellipsis-vertical{
     color:white
   }
+
+.fa-square-plus{
+  background-color: gray;
+}
+
+.violabg{
+  background-color: rgb(143, 95, 154);
+  border-radius: 5px ;
+  width: 20px;
+  height: 20px;;
+
+}
+
+.iconaLateral{
+  
+  height: 7px;
+  
+}
+.verdebg{
+  background-color: rgb(2, 42, 6);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    
+}
+.bgangle{
+  background-color: #2D2D2D;
+  width: 30px;
+  height: 30px;
+}
