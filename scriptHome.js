@@ -22,7 +22,7 @@ const asyncWait = async function (url, where) {
           />
           <div class="card-body">
             <h6 class="card-title fw-bolder" role='button' >${jarray[i].title}</h6>
-            <p class="card-text fw-light " role='button'>${jarray[i].album.title}</p>
+            <p class="card-text fw-light albumClick" id="${jarray[i].album.id}" role='button'>${jarray[i].album.title}</p>
             <p class="card-text fst-italic artistText artistClick" role='button' id="${jarray[i].artist.id}">${jarray[i].artist.name}</p>
 
           </div>
@@ -69,7 +69,7 @@ const asyncWait = async function (url, where) {
             <p class="card-text titleLeft mt-2">Album</p>
             <h6 class="card-title pBold fs-1 mt-4 mb-3 " role='button'>${jarray[0].title}</h6>
             <p class="card-text mb-3 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[0].artist.name}</p>
-            <p class="card-text mb-3 " role='button'>${jarray[0].album.title}</p>
+            <p class="card-text mb-3 albumClick" role='button' id="${jarray[0].album.id} >${jarray[0].album.title}</p>
             
             <div class="d-flex flex-row">
               <a
@@ -105,7 +105,7 @@ const asyncWait = async function (url, where) {
             <div class="col-6 mycardText  mt-2">
               <h6 class="card-text mt-2 textartist artistClick" id="${jarray[0].artist.id}" role='button'>${jarray[0].artist.name}</h6>
               
-              <p class="card-text fs-5 mb-3 fst-italic fs-6">${jarray[0].album.title}</p>
+              <p class="card-text fs-5 mb-3 fst-italic fs-6 albumClick" id="${jarray[0].album.id}">${jarray[0].album.title}</p>
               <p class="card-text fs-5 mb-3 fw-bold fs-2">${jarray[0].title}</p>
             </div>
           </div>
@@ -138,7 +138,23 @@ const asyncWait = async function (url, where) {
         console.log(params.toString());
       }
 
+      async function clickedAlbum(event) {
+        let myAlbum = event.target.id;
+
+        //await asyncWait(myArtist, "artistDiv");
+
+        let params = new URLSearchParams(window.location.search);
+        params.set("search", myAlbum);
+        // window.location.search = params;
+        window.location.href = "albumPage.html?" + params;
+        console.log(params.toString());
+      }
+
       let artist = document.querySelectorAll(".artistClick");
+      let album = document.querySelectorAll(".albumClick");
+      album.forEach((element) => {
+        element.addEventListener("click", clickedAlbum);
+      });
 
       artist.forEach((artistN) => {
         artistN.addEventListener("click", clicked);
