@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 .buttonSpotify {
   background-color: rgb(30, 215, 96);
   border: none;
@@ -582,4 +583,48 @@ section {
 .table {
   color: white;
   width: 100%;
+}
+
+.containerAlbum img {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  -o-box-shadow: -1px 0px 25px -2px #303030;
+  box-shadow: -1px 0px 25px -2px #303030;
+}
+
+#artistImg {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #artistImg {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+.card-body h2 {
+  font-size: 3vw !important;
+}
+
+@media screen and (max-width: 768px) {
+  .card-body h2 {
+    font-size: 6vw !important;
+    font-weight: 400 !important;
+  }
+}
+.card-body p {
+  font-size: 0.7vw !important;
+}
+
+@media screen and (max-width: 768px) {
+  .card-body p {
+    font-size: 2vw !important;
+    font-weight: 400 !important;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=app.css.map */
