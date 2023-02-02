@@ -74,8 +74,9 @@
 
 
             <div class="searchBar d-flex">
-                <i class="fa-solid fa-magnifying-glass m-1"></i>
-                <input type="search" Placeholder="Cosa vuoi ascoltare?" class="inputSearch">
+                <i class="fa-solid fa-magnifying-glass m-1" onclick="asyncWait()"></i>
+
+                <input type="search" Placeholder="Cosa vuoi ascoltare?" class="inputSearch" id="inputSearch">
             </div>
 
 
@@ -84,10 +85,10 @@
             </div>
 
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  ">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  " id="cardContainerSearch">
 
 
-                    <div class="col mt-3">
+                    <!-- <div class="col mt-3">
                         <div class="searchCard card d-flex align-items-center" style="max-width: 15rem;">
                             <img src="https://place.dog/300/300" class="searchImgCard card-img-top" alt="">
                             <div class="card-body">
@@ -130,7 +131,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -214,7 +215,7 @@
             </div>
         </div>
     </div>
-    <script src="./scriptHome.js"></script>
+    <script src="./scriptSearch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -223,7 +224,7 @@
 
 
 
-
+<script src="./scriptSearch.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
