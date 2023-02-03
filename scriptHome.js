@@ -61,7 +61,8 @@ const asyncWait = async function (url, where) {
         </div>`;
         }
       } else if (where === "first") {
-        console.log(jarray[0]);
+        var arrayFirst = jarray;
+        console.log(jarray[0].preview);
 
         div.innerHTML += `
       
@@ -249,6 +250,7 @@ const asyncWait = async function (url, where) {
       if (where === "cardDiv") {
         function songPlayer(event) {
           let i = event.target.id;
+
           console.log(jarray2[i].preview);
 
           let footer = document.getElementById("footerPlay");
@@ -304,6 +306,7 @@ const asyncWait = async function (url, where) {
   </div>
 </div>
 </div>`;
+
           let playButtonPlayer = document.getElementById("playStart");
           function playpauseMusic() {
             let audio = document.getElementById("myAudio");
@@ -342,6 +345,8 @@ const asyncWait = async function (url, where) {
       songs.forEach((element) => {
         element.addEventListener("click", songPlayer);
       });
+
+      let buttonPlay = document.querySelectorAll(".buttonPlay");
     }
   } catch (err) {
     console.log(err);
