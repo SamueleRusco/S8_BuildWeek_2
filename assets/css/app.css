@@ -137,7 +137,6 @@ h6 {
 
 .mycardsmall :hover {
   background-color: rgb(59, 59, 59);
-  border-radius: 10px !important;
 }
 
 .mycardpiacecontainer :hover {
@@ -726,7 +725,7 @@ h3 {
 }
 
 .long {
-  height: 1000px;
+  height: 1100px;
 }
 
 h6 {
@@ -824,4 +823,8 @@ body {
 
 .libreria {
   transform: rotate(90deg);
+}
+
+.music-player {
+  border-top: solid 0.01px rgb(40, 40, 40);
 }/*# sourceMappingURL=app.css.map */
