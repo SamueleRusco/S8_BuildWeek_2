@@ -134,85 +134,85 @@ const asyncWait = async function (url, where) {
         }
       }
 
-      let buttonPlay = document.querySelector(".buttonPlay");
+      //       let buttonPlay = document.querySelector(".buttonPlay");
 
-      async function playMusic(event) {
-        console.log(event);
-        let myMusic = event.target.id;
-        let footer = document.getElementById("footerPlay");
-        footer.innerHTML = `<div class="music-player row d-none d-md-flex">
-<audio class="d-none" id="myAudio">
-  <source src="${myMusic}" type="audio/mpeg" />
-  Your browser does not support the audio tag.
-</audio>
+      //       async function playMusic(event) {
+      //         console.log(event);
+      //         let myMusic = event.target.id;
+      //         let footer = document.getElementById("footerPlay");
+      //         footer.innerHTML = `<div class="music-player row d-none d-md-flex">
+      // <audio class="d-none" id="myAudio">
+      //   <source src="${myMusic}" type="audio/mpeg" />
+      //   Your browser does not support the audio tag.
+      // </audio>
 
-<div class="song-bar col-3">
-  <div class="song-infos">
-    <div class="image">
-      <img src="https://place.dog/300/300" alt="" />
-    </div>
-    <div class="song-description">
-      <p class="title">Titolo Canzone</p>
-      <p class="artist">Artista</p>
-    </div>
-  </div>
+      // <div class="song-bar col-3">
+      //   <div class="song-infos">
+      //     <div class="image">
+      //       <img src="https://place.dog/300/300" alt="" />
+      //     </div>
+      //     <div class="song-description">
+      //       <p class="title">Titolo Canzone</p>
+      //       <p class="artist">Artista</p>
+      //     </div>
+      //   </div>
 
-  <div class="icons">
-    <i class="far fa-heart"></i>
-    <i class="fas fa-compress"></i>
-  </div>
-</div>
+      //   <div class="icons">
+      //     <i class="far fa-heart"></i>
+      //     <i class="fas fa-compress"></i>
+      //   </div>
+      // </div>
 
-<div class="col-7 progress-controller">
-  <div class="control-buttons">
-    <i class="fas fa-random"></i>
-    <i class="fas fa-step-backward"></i>
-    <i class="play-pause fas fa-play" id="playStart"></i>
-    <i class="fas fa-step-forward"></i>
-    <i class="fas fa-undo-alt"></i>
-  </div>
+      // <div class="col-7 progress-controller">
+      //   <div class="control-buttons">
+      //     <i class="fas fa-random"></i>
+      //     <i class="fas fa-step-backward"></i>
+      //     <i class="play-pause fas fa-play" id="playStart"></i>
+      //     <i class="fas fa-step-forward"></i>
+      //     <i class="fas fa-undo-alt"></i>
+      //   </div>
 
-  <div class="progress-container">
-    <span>tempo inizio</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-    <span>tempo fine</span>
-  </div>
-</div>
+      //   <div class="progress-container">
+      //     <span>tempo inizio</span>
+      //     <div class="progress-bar">
+      //       <div class="progress"></div>
+      //     </div>
+      //     <span>tempo fine</span>
+      //   </div>
+      // </div>
 
-<div class="col-2 other-features">
-  <i class="fas fa-list-ul"></i>
-  <i class="fas fa-desktop"></i>
-  <div class="volume-bar">
-    <i class="fas fa-volume-down"></i>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-  </div>
-</div>
-</div>`;
-        let audio = document.getElementById("myAudio");
-        if (audio.isplaying) {
-          audio.load();
-          audio.src = audio.src;
-        } else {
-          audio.play();
-        }
-      }
-      let playPause = document.getElementById("playStart");
+      // <div class="col-2 other-features">
+      //   <i class="fas fa-list-ul"></i>
+      //   <i class="fas fa-desktop"></i>
+      //   <div class="volume-bar">
+      //     <i class="fas fa-volume-down"></i>
+      //     <div class="progress-bar">
+      //       <div class="progress"></div>
+      //     </div>
+      //   </div>
+      // </div>
+      // </div>`;
+      //         let audio = document.getElementById("myAudio");
+      //         if (audio.isplaying) {
+      //           audio.load();
+      //           audio.src = audio.src;
+      //         } else {
+      //           audio.play();
+      //         }
+      //       }
+      //       let playPause = document.getElementById("playStart");
 
-      function pauseMusic() {
-        let audio = document.getElementById("myAudio");
-        if (!audio.paused) {
-          audio.load();
-        } else {
-          audio.play();
-        }
-      }
-      playPause.addEventListener("click", pauseMusic);
+      //       function pauseMusic() {
+      //         let audio = document.getElementById("myAudio");
+      //         if (!audio.paused) {
+      //           audio.load();
+      //         } else {
+      //           audio.play();
+      //         }
+      //       }
+      //       playPause.addEventListener("click", pauseMusic);
 
-      buttonPlay.addEventListener("click", playMusic);
+      //buttonPlay.addEventListener("click", playMusic);
 
       async function clicked(event) {
         let myArtist = event.target.id;
@@ -237,7 +237,6 @@ const asyncWait = async function (url, where) {
         window.location.href = "albumPage.html?" + params;
         console.log(params.toString());
       }
-
       let artist = document.querySelectorAll(".artistClick");
       let album = document.querySelectorAll(".albumClick");
       album.forEach((element) => {
@@ -247,11 +246,13 @@ const asyncWait = async function (url, where) {
       artist.forEach((artistN) => {
         artistN.addEventListener("click", clicked);
       });
+      if (where === "cardDiv") {
+        function songPlayer(event) {
+          let i = event.target.id;
+          console.log(jarray2[i].preview);
 
-      function songPlayer(event) {
-        let i = event.target.id;
-        let footer = document.getElementById("footerPlay");
-        footer.innerHTML = `<div class="music-player row d-none d-md-flex">
+          let footer = document.getElementById("footerPlay");
+          footer.innerHTML = `<div class="music-player row d-none d-md-flex">
 <audio class="d-none" id="myAudio">
   <source src="${jarray2[i].preview}" type="audio/mpeg" />
   Your browser does not support the audio tag.
@@ -278,17 +279,17 @@ const asyncWait = async function (url, where) {
   <div class="control-buttons">
     <i class="fas fa-random"></i>
     <i class="fas fa-step-backward"></i>
-    <i class="play-pause fas fa-play" id="playStart"></i>
+    <i class="play-pause fas fa-play" id="playStart" role='button'></i>
     <i class="fas fa-step-forward"></i>
     <i class="fas fa-undo-alt"></i>
   </div>
 
   <div class="progress-container">
-    <span>tempo inizio</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
+    <span id="current"></span>
+    <div class="progress-bar" id="progressContainer">
+      <div class="progress" id="progress"></div>
     </div>
-    <span>tempo fine</span>
+    <span id="fine">0.30</span>
   </div>
 </div>
 
@@ -303,6 +304,37 @@ const asyncWait = async function (url, where) {
   </div>
 </div>
 </div>`;
+          let playButtonPlayer = document.getElementById("playStart");
+          function playpauseMusic() {
+            let audio = document.getElementById("myAudio");
+
+            console.log("button pressed");
+
+            if (!audio.paused) {
+              audio.pause();
+            } else {
+              audio.play();
+            }
+          }
+
+          playButtonPlayer.addEventListener("click", playpauseMusic);
+
+          let audio = document.getElementById("myAudio");
+          let progressContainer = document.getElementById("progressContainer");
+
+          let progress = document.getElementById("progress");
+
+          setInterval(function () {
+            var rect = progressContainer.getBoundingClientRect();
+            var percentage = audio.currentTime / audio.duration;
+            progress.style.width = percentage * rect.width + "px";
+            let fine = document.getElementById("fine");
+            let currentTime = document.getElementById("current");
+            if (!audio.paused) {
+              currentTime.innerHTML = Math.trunc(audio.currentTime) / 100;
+            }
+          }, 100);
+        }
       }
 
       let songs = document.querySelectorAll(".playerClick");

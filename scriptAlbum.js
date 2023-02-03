@@ -127,11 +127,11 @@ const asyncWait = async function (url, where) {
   </div>
 
   <div class="progress-container">
-    <span>tempo inizio</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
+    <span id="current"></span>
+    <div class="progress-bar" id="progressContainer">
+      <div class="progress" id="progress"></div>
     </div>
-    <span>tempo fine</span>
+    <span id="fine">0.30</span>
   </div>
 </div>
 
@@ -146,6 +146,37 @@ const asyncWait = async function (url, where) {
   </div>
 </div>
 </div>`;
+
+        let playButtonPlayer = document.getElementById("playStart");
+        function playpauseMusic() {
+          let audio = document.getElementById("myAudio");
+
+          console.log("button pressed");
+
+          if (!audio.paused) {
+            audio.pause();
+          } else {
+            audio.play();
+          }
+        }
+
+        playButtonPlayer.addEventListener("click", playpauseMusic);
+
+        let audio = document.getElementById("myAudio");
+        let progressContainer = document.getElementById("progressContainer");
+
+        let progress = document.getElementById("progress");
+
+        setInterval(function () {
+          var rect = progressContainer.getBoundingClientRect();
+          var percentage = audio.currentTime / audio.duration;
+          progress.style.width = percentage * rect.width + "px";
+          let fine = document.getElementById("fine");
+          let currentTime = document.getElementById("current");
+          if (!audio.paused) {
+            currentTime.innerHTML = Math.trunc(audio.currentTime) / 100;
+          }
+        }, 100);
       }
 
       let songs = document.querySelectorAll(".playerClick");

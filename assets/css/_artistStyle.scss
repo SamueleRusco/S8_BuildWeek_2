@@ -167,3 +167,25 @@ h4 {
 
   left: 216px;
 }
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #ccc4 !important;
+}
+
+.progress {
+  position: relative;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
