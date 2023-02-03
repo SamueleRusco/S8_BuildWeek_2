@@ -135,86 +135,6 @@ const asyncWait = async function (url, where) {
         }
       }
 
-      //       let buttonPlay = document.querySelector(".buttonPlay");
-
-      //       async function playMusic(event) {
-      //         console.log(event);
-      //         let myMusic = event.target.id;
-      //         let footer = document.getElementById("footerPlay");
-      //         footer.innerHTML = `<div class="music-player row d-none d-md-flex">
-      // <audio class="d-none" id="myAudio">
-      //   <source src="${myMusic}" type="audio/mpeg" />
-      //   Your browser does not support the audio tag.
-      // </audio>
-
-      // <div class="song-bar col-3">
-      //   <div class="song-infos">
-      //     <div class="image">
-      //       <img src="https://place.dog/300/300" alt="" />
-      //     </div>
-      //     <div class="song-description">
-      //       <p class="title">Titolo Canzone</p>
-      //       <p class="artist">Artista</p>
-      //     </div>
-      //   </div>
-
-      //   <div class="icons">
-      //     <i class="far fa-heart"></i>
-      //     <i class="fas fa-compress"></i>
-      //   </div>
-      // </div>
-
-      // <div class="col-7 progress-controller">
-      //   <div class="control-buttons">
-      //     <i class="fas fa-random"></i>
-      //     <i class="fas fa-step-backward"></i>
-      //     <i class="play-pause fas fa-play" id="playStart"></i>
-      //     <i class="fas fa-step-forward"></i>
-      //     <i class="fas fa-undo-alt"></i>
-      //   </div>
-
-      //   <div class="progress-container">
-      //     <span>tempo inizio</span>
-      //     <div class="progress-bar">
-      //       <div class="progress"></div>
-      //     </div>
-      //     <span>tempo fine</span>
-      //   </div>
-      // </div>
-
-      // <div class="col-2 other-features">
-      //   <i class="fas fa-list-ul"></i>
-      //   <i class="fas fa-desktop"></i>
-      //   <div class="volume-bar">
-      //     <i class="fas fa-volume-down"></i>
-      //     <div class="progress-bar">
-      //       <div class="progress"></div>
-      //     </div>
-      //   </div>
-      // </div>
-      // </div>`;
-      //         let audio = document.getElementById("myAudio");
-      //         if (audio.isplaying) {
-      //           audio.load();
-      //           audio.src = audio.src;
-      //         } else {
-      //           audio.play();
-      //         }
-      //       }
-      //       let playPause = document.getElementById("playStart");
-
-      //       function pauseMusic() {
-      //         let audio = document.getElementById("myAudio");
-      //         if (!audio.paused) {
-      //           audio.load();
-      //         } else {
-      //           audio.play();
-      //         }
-      //       }
-      //       playPause.addEventListener("click", pauseMusic);
-
-      //buttonPlay.addEventListener("click", playMusic);
-
       async function clicked(event) {
         let myArtist = event.target.id;
 
@@ -352,10 +272,35 @@ const asyncWait = async function (url, where) {
     console.log(err);
   }
 };
+const arrayFirst = [
+  "never gonna give you up",
+  "rock and roll all night",
+  "stuck in a hole",
+  "something in the way",
+  "lisola che non ce",
+  "haunt me ",
+];
+const arrayBuonasera = [
+  "pink floyd",
+  "adele",
+  "dua lipa",
+  "alice in chains",
+  "lou reed",
+  "black sabbath",
+];
+const arrayHome = ["hello", "crystal castle", "energy"];
+
+function random(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let randomNumber = random(arrayHome.length);
+let randomNumber2 = random(arrayFirst.length);
+let randomNumber3 = random(arrayBuonasera.length);
 
 window.onload = () => {
-  asyncWait("hello", "cardDiv");
-  asyncWait("pink floyd", "buonasera");
-  asyncWait("pavement", "first");
+  asyncWait(arrayHome[randomNumber], "cardDiv");
+  asyncWait(arrayBuonasera[randomNumber3], "buonasera");
+  asyncWait(arrayFirst[randomNumber2], "first");
   asyncWait("ac/dc", "containerMobile");
 };
