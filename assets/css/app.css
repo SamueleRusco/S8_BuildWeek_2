@@ -689,22 +689,16 @@ section {
 
 .searchImgCard {
   width: 90%;
-  max-width: 150px;
-  max-height: 200px;
   margin: 10px;
   border-radius: 5px;
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 1.4em;
 }
 
 .cardContainerImg {
   padding: 10px;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
