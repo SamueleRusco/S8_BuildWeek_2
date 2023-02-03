@@ -701,10 +701,6 @@ section {
   padding: 10px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .cardpop {
   background: rgb(34, 193, 195);
   background: linear-gradient(298deg, rgb(34, 193, 195) 0%, rgb(80, 152, 105) 100%);
@@ -719,4 +715,8 @@ body {
   transform: rotate(-45deg);
   -o-box-shadow: 5px 5px 43px -4px #000000;
   box-shadow: 5px 5px 43px -4px #000000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=app.css.map */
