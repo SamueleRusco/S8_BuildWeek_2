@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 
 @import "color";
 @import "buttons";
@@ -6,12 +6,11 @@
 @import "homePage";
 @import "footer";
 @import "mainAlbumPage";
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    
+@import "searchBar";
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .libreria {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
