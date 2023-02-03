@@ -73,7 +73,7 @@ const asyncWait = async function (url, where) {
               alt="..."
             />
             </div>
-            <div class="col-7 mycardText text-white mb-4">
+            <div class="col-5 mycardText text-white mb-4">
             <p class="card-text titleLeft mt-2">Album</p>
             <h6 class="card-title pBold fs-1 mt-4 mb-3 " role='button'>${jarray[0].title}</h6>
             <p class="card-text mb-3 artistClick" role='button' id="${jarray[0].artist.id}">${jarray[0].artist.name}</p>
@@ -82,13 +82,13 @@ const asyncWait = async function (url, where) {
             <div class="d-flex flex-row">
               <a
               
-                class="btn fs-6 rounded-pill me-3 buttonSpotify px-4 py-2 buttonPlay"
+                class="btn fs-6 rounded-pill me-3 buttonSpotify px-3 py-2 buttonPlay"
                 id="${jarray[0].preview}"
                 >Play</a
               >
               <a
                 href="#"
-                class="btn fs-6 btn-outline-light rounded-pill px-4 py-2"
+                class="btn fs-6 btn-outline-light rounded-pill px-3 py-2"
                 >Salva</a
               >
             </div>
