@@ -703,6 +703,10 @@ section {
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
