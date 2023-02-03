@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/app.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,6 +15,8 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+
     <title>Artist Page</title>
   </head>
 
@@ -143,7 +144,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-7 middleSection all">
+      <div class="col-12 col-md-7 middleSection long">
         <div id="artistDiv"></div>
         <div class="container-fluid contenuto">
           <div class="d-flex flex-column p-3 justify-content-between">
@@ -192,42 +193,73 @@
       </div>
       <!-- laterale -->
       <div class="px-3 d-none d-md-block col-md-2 bg-black"></div>
-    </div>
-    <div class="position-fixed top-0 end-0 px-3 d-none d-md-block col-md-2">
-      <div class="d-flex justify-content-between mt-4 align-items-center mb-2">
-        <h3 class="titleLeft">I tuoi amici</h3>
+      <div class="position-fixed top-0 end-0 px-3 d-none d-md-block col-md-2">
+        <div
+          class="d-flex justify-content-between mt-4 align-items-center mb-2"
+        >
+          <h3 class="titleLeft">I tuoi amici</h3>
 
-        <div mt-4>
-          <i class="fa-solid fa-user-plus text-white"></i>
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-      </div>
-      <div>
-        <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
-          <img
-            src="https://pyxis.nymag.com/v1/imgs/55c/50d/92b3f892b6d460f9f0fcd90b30a4f57d22-10-momo.rsquare.w330.jpg"
-            class="m-2 card-img-top rounded-circle"
-            alt="..."
-          />
-          <div class="card-body p-0">
-            <p class="titleLeft">Mauro</p>
-            <p class="titleLeft">Ha ascoltato Beatles</p>
-            <p class="titleLeft">1h fa</p>
+          <div mt-4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V10.5a.5.5 0 0 0-1 0v2.793l-.646-.647a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+              />
+              <path
+                d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
           </div>
         </div>
-      </div>
+        <div>
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="https://pyxis.nymag.com/v1/imgs/55c/50d/92b3f892b6d460f9f0fcd90b30a4f57d22-10-momo.rsquare.w330.jpg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex justify-content-between">
+                <p class="titleLeft">Mauro</p>
+                <p class="fw-normal">3 min ago</p>
+              </div>
+              <p class="titleLeft">Ha ascoltato Beatles</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="mt-4">
-        <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
-          <img
-            src="https://img-9gag-fun.9cache.com/photo/anQbj0o_460s.jpg"
-            class="m-2 card-img-top rounded-circle"
-            alt="..."
-          />
-          <div class="card-body p-0">
-            <p class="titleLeft">Piero</p>
-            <p class="titleLeft">Ha ascoltato PesteNoire</p>
-            <p class="titleLeft">14 min fa</p>
+        <div class="mt-4">
+          <div class="card mycardAmico bg-black d-flex flex-row flex-nowrap">
+            <img
+              src="https://img-9gag-fun.9cache.com/photo/anQbj0o_460s.jpg"
+              class="m-2 card-img-top rounded-circle"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex justify-content-between">
+                <p class="titles">Piero</p>
+                <p class="fw-normal">14 min fa</p>
+              </div>
+              <p class="titleLeft">Ha ascoltato PesteNoire</p>
+            </div>
           </div>
         </div>
       </div>
@@ -286,7 +318,9 @@
       </div>
     </footer>
     <div class="footerMobile g-0 d-flex flex-column justify-content-center">
-      <div class="player d-flex justify-content-end align-items-baseline">
+      <div
+        class="player d-md-none d-flex justify-content-end align-items-baseline"
+      >
         <p class="w-40">testo Che gira</p>
         <i class="fa-solid fa-display m-3"></i>
         <i class="fa-regular fa-heart m-3"></i>

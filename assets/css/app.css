@@ -11,184 +11,6 @@
   color: rgb(80, 80, 80);
 }
 
-.leftSection {
-  background-color: aquamarine;
-  height: 100%;
-}
-
-.rightSection {
-  background-color: aquamarine;
-  height: 100%;
-}
-
-.middleSection {
-  background-color: rgb(18, 18, 18);
-}
-
-body {
-  width: 100%;
-  height: 100%;
-}
-
-.immagineCopertina {
-  width: 100%;
-  height: 300px;
-  background-image: url("https://www.themusicblog.eu/wp-content/uploads/2022/07/musica-rock-luglio-2022.jpg");
-  background-size: cover;
-}
-
-.all {
-  height: 1000px;
-  width: 100%;
-}
-
-h5 {
-  font-size: 0.7vw !important;
-  color: white !important;
-  margin: 0 !important;
-}
-
-h1 {
-  font-size: 5vw !important;
-  font-weight: 800 !important;
-}
-
-.fa-shuffle {
-  color: rgb(2, 235, 2);
-  font-size: 25px;
-}
-
-.fa-circle-play {
-  color: rgb(2, 235, 2);
-  width: 50px;
-  font-size: 30px;
-}
-
-.fa-ellipsis {
-  color: rgb(164, 160, 160);
-  width: 50px;
-  font-size: 20px;
-}
-
-.fa-ellipsis-vertical {
-  color: rgb(164, 160, 160);
-}
-
-h3 {
-  color: white !important;
-  font-size: 0.8vw !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-}
-
-.polaroid {
-  width: 30px;
-}
-
-.numAscolti {
-  color: rgb(176, 173, 173) !important;
-  font-size: 0.7vw !important;
-}
-
-.visualizza {
-  color: rgb(176, 173, 173) !important;
-  font-size: 0.8vw !important;
-}
-
-.contenuto {
-  background: rgb(33, 33, 33);
-  background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
-}
-
-h6 {
-  font-size: 0.8vw !important;
-  color: rgb(111, 107, 107) !important;
-  margin: 0 !important;
-}
-
-h2 {
-  color: white !important;
-  font-size: 1.5vw !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-}
-
-.myButton {
-  font-size: 0.8vw !important;
-}
-
-h4 {
-  color: white !important;
-  font-size: 0.8vw !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 12vw !important;
-    font-weight: 700 !important;
-  }
-  .imgArtist {
-    width: 80px !important;
-  }
-  h3 {
-    font-size: 3.5vw !important;
-    font-weight: 400 !important;
-  }
-  .numAscolti {
-    font-size: 2vw !important;
-    font-weight: 400 !important;
-  }
-  h2 {
-    font-size: 3.5vw !important;
-  }
-  .like {
-    font-size: 2vw !important;
-  }
-  .artistLike {
-    font-size: 1.5vw !important;
-  }
-  .artistlikeImg {
-    width: 70px !important;
-    height: 70px !important;
-  }
-  h5 {
-    color: rgb(111, 107, 107) !important;
-    font-size: 2.5vw !important;
-  }
-  .visualizza {
-    font-size: 1.8vw !important;
-  }
-}
-.numeroascolti {
-  position: relative;
-  left: 216px;
-}
-
-.progress-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-}
-
-.progress-bar {
-  height: 4px;
-  border-radius: 10px;
-  width: 30%;
-  background-color: rgba(204, 204, 204, 0.2666666667) !important;
-}
-
-.progress {
-  position: relative;
-  height: 100%;
-  width: 0;
-  border-radius: 10px;
-  background-color: var(--secondary-color);
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   width: 100% !important;
@@ -200,7 +22,7 @@ p {
   color: white;
   font-size: 0.7em;
   margin-bottom: 2px;
-  font-weight: 600important;
+  font-weight: 600 !important;
 }
 
 .altro {
@@ -295,7 +117,7 @@ h6 {
 }
 
 .mycardsmall {
-  background-color: #2D2D2D !important;
+  background-color: #2d2d2d !important;
   border-radius: 8px !important;
 }
 
@@ -374,7 +196,7 @@ h6 {
 }
 
 .bgangle {
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   width: 30px;
   height: 30px;
 }
@@ -808,6 +630,192 @@ section {
 
 a {
   text-decoration: none;
+}
+
+.leftSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+
+.rightSection {
+  background-color: aquamarine;
+  height: 100%;
+}
+
+.middleSection {
+  background-color: rgb(18, 18, 18);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.immagineCopertina {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://www.themusicblog.eu/wp-content/uploads/2022/07/musica-rock-luglio-2022.jpg");
+  background-size: cover;
+}
+
+.all {
+  height: 1000px;
+  width: 100%;
+}
+
+h5 {
+  font-size: 0.7vw !important;
+  color: white !important;
+  margin: 0 !important;
+}
+
+h1 {
+  font-size: 5vw !important;
+  font-weight: 800 !important;
+}
+
+.fa-shuffle {
+  color: rgb(2, 235, 2);
+  font-size: 25px;
+}
+
+.fa-circle-play {
+  color: rgb(2, 235, 2);
+  width: 50px;
+  font-size: 30px;
+}
+
+.fa-ellipsis {
+  color: rgb(164, 160, 160);
+  width: 50px;
+  font-size: 20px;
+}
+
+.fa-ellipsis-vertical {
+  color: rgb(164, 160, 160);
+}
+
+.polaroid {
+  width: 30px;
+}
+
+.numAscolti {
+  color: rgb(176, 173, 173) !important;
+  font-size: 0.7vw !important;
+}
+
+.visualizza {
+  color: rgb(176, 173, 173) !important;
+  font-size: 0.8vw !important;
+}
+
+.titleLeft {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+}
+
+.contenuto {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(18, 18, 18) 100%);
+}
+
+h3 {
+  font-size: 10px;
+}
+
+.long {
+  height: 1000px;
+}
+
+h6 {
+  font-size: 0.8vw !important;
+  color: rgb(111, 107, 107) !important;
+  margin: 0 !important;
+}
+
+h2 {
+  color: white !important;
+  font-size: 1.5vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+.myButton {
+  font-size: 0.8vw !important;
+}
+
+h4 {
+  color: white !important;
+  font-size: 0.8vw !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 12vw !important;
+    font-weight: 700 !important;
+  }
+  .imgArtist {
+    width: 80px !important;
+  }
+  h3 {
+    font-size: 3.5vw !important;
+    font-weight: 400 !important;
+  }
+  .numAscolti {
+    font-size: 2vw !important;
+    font-weight: 400 !important;
+  }
+  h2 {
+    font-size: 3.5vw !important;
+  }
+  .like {
+    font-size: 2vw !important;
+  }
+  .artistLike {
+    font-size: 1.5vw !important;
+  }
+  .artistlikeImg {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  h5 {
+    color: rgb(111, 107, 107) !important;
+    font-size: 2.5vw !important;
+  }
+  .visualizza {
+    font-size: 1.8vw !important;
+  }
+}
+.numeroascolti {
+  position: relative;
+  left: 216px;
+}
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: rgba(204, 204, 204, 0.2666666667) !important;
+}
+
+.progress {
+  position: relative;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
 }
 
 body {

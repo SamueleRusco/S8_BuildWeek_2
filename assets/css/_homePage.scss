@@ -8,9 +8,9 @@ p {
   color: white;
   font-size: 0.7em;
   margin-bottom: 2px;
-  font-weight: 600important;
+  font-weight: 600 !important;
 }
-.altro{
+.altro {
   font-size: 1.2vw !important;
 }
 
@@ -28,9 +28,12 @@ h6 {
   font-weight: 400;
 }
 .centerPart {
-  background: rgb(33,33,33);
-  background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(18,18,18,1) 100%);
-  ;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
 }
 .logo {
   height: 50px;
@@ -97,7 +100,7 @@ h6 {
   width: 100px;
 }
 .mycardsmall {
-  background-color:#2D2D2D !important;
+  background-color: #2d2d2d !important;
   border-radius: 8px !important;
 }
 
@@ -106,7 +109,7 @@ h6 {
 }
 
 .mycardpiace {
-  background-color: #232323  !important;
+  background-color: #232323 !important;
   border-radius: 8px !important;
 }
 
@@ -120,7 +123,6 @@ h6 {
 .mycardsmall :hover {
   background-color: rgb(59, 59, 59);
   border-radius: 10px !important;
-
 }
 .mycardpiacecontainer :hover {
   background-color: #3c3c3c !important;
@@ -139,44 +141,41 @@ h6 {
 .h6home {
   color: rgb(123, 123, 123);
   font-weight: 600 !important;
-  font-size: 0.8em !important;}
+  font-size: 0.8em !important;
+}
 
-  .textartist{
-font-size: 0.7em !important;
-  }
-  #containerMobile{
-    margin-bottom: 100px;
-  }
-  .fa-ellipsis-vertical{
-    color:white
-  }
+.textartist {
+  font-size: 0.7em !important;
+}
+#containerMobile {
+  margin-bottom: 100px;
+}
+.fa-ellipsis-vertical {
+  color: white;
+}
 
-.fa-square-plus{
+.fa-square-plus {
   background-color: gray;
 }
 
-.violabg{
+.violabg {
   background-color: rgb(143, 95, 154);
-  border-radius: 5px ;
+  border-radius: 5px;
   width: 20px;
-  height: 20px;;
-
+  height: 20px;
 }
 
-.iconaLateral{
-  
+.iconaLateral {
   height: 7px;
-  
 }
-.verdebg{
+.verdebg {
   background-color: rgb(2, 42, 6);
-    border-radius: 5px;
-    width: 20px;
-    height: 20px;
-    
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
 }
-.bgangle{
-  background-color: #2D2D2D;
+.bgangle {
+  background-color: #2d2d2d;
   width: 30px;
   height: 30px;
 }
